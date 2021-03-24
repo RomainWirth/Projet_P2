@@ -1,0 +1,197 @@
+/* GENERAL */
+
+@font-face
+{
+	font-family: "Raleway";
+	src: url("Raleway-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+#bloc_page
+{
+	max-width: 1440px;
+	margin: 0 auto;
+	font-family: "Raleway", sans-serif;
+	background-color: #E2DDFF; /*couleur pour visualiser */
+}
+
+/* HEADER */
+header
+{
+	background-color: red;	
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 95%;
+	margin: auto;
+	padding: 10px;
+}
+
+#logo
+{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+header img
+{
+	width: 100px; /* modifier la largeur et hauteur pour que le logo ne change pas en taille en fonction de la taille de l'écran */
+	height: 40px;
+}
+
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+}
+
+nav li {margin-right: 30px;}
+
+nav a
+{
+	color: black;
+}
+
+nav a:hover
+{
+	color: #0065FC;
+	border-top-color: #0065FC;
+}
+
+#inscription {font-weight: bold;}
+
+/* SECTION PRESENTATION */
+#presentation
+{
+	background-color: green;
+	width: 95%;
+	margin: auto;
+	padding: 10px;
+}
+
+#recherche
+{
+
+}
+
+#filtres
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+#presentation
+{
+
+}
+
+/* SECTION HEBERGEMENTS */
+#hebergements
+{
+	background-color: grey;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 95%;
+	margin: auto;
+	padding: 10px;
+}
+
+article
+{
+	width: 60%;
+}
+
+aside
+{
+	flex: 1.2;
+	position: relative;
+	background-color: #F2F2F2;
+	width: 20%;
+}
+
+/* DIV hotel_selectionnés */
+
+#hotel_select
+{
+	background-color: #F2F2F2;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width : 80%;
+}
+
+.hebergements_box
+{
+    background: white;
+    height: 250px;
+    width: 300px;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: left;
+    font-size: small;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.hebergements_box img
+{
+	height: 70%;
+	width: 95%;
+	border-radius: 15px 15px 0 0;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+
+/* DIV hôtels populaires */
+#populaire
+{
+	background-color: #F2F2F2;
+	width: 20%;
+}
+
+/* SECTION ACTIVITES */
+#activites
+{
+	background-color: blue;
+	display: flex;
+	width: 95%;
+	margin: auto;
+	padding: 10px;
+}
+
+
+/* FOOTER */
+footer
+{
+	background-color: #F2F2F2;
+	display: flex;
+	justify-content: space-around;
+	align-items: top center;
+	text-align: top left;
+}
+
+#a_propos
+{
+	background-color: #777;
+}
+
+#nous_rejoindre
+{
+	background-color: #777;
+}
+
+#assistance
+{
+	background-color: #777;
+}
+
+
+/* RESPONSIVE DESIGN */
+
