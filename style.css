@@ -23,9 +23,8 @@ header
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	width: 95%;
-	margin: auto;
-	padding: 10px;
+	width: 93%;
+	margin: auto 3.5%;
 }
 
 #logo
@@ -47,7 +46,7 @@ nav ul
 	display: flex;
 }
 
-nav li {margin-right: 30px;}
+nav li {margin-right: 3.5%;} /* modifier pour mettre en unitée relative */
 
 nav a
 {
@@ -66,9 +65,9 @@ nav a:hover
 #presentation
 {
 	background-color: green;
-	width: 95%;
+	width: 93%;
 	margin: auto;
-	padding: 10px;
+	margin: auto 3.5%;
 }
 
 #recherche
@@ -96,14 +95,13 @@ nav a:hover
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	width: 95%;
-	margin: auto;
-	padding: 10px;
+	width: 93%;
+	margin: auto 3.5%;
 }
 
 article
 {
-	width: 60%;
+	width: 61.1%;
 }
 
 aside
@@ -111,7 +109,7 @@ aside
 	flex: 1.2;
 	position: relative;
 	background-color: #F2F2F2;
-	width: 20%;
+	width: 29.1%;
 }
 
 /* DIV hotel_selectionnés */
@@ -126,23 +124,32 @@ aside
 	width : 80%;
 }
 
+#selection
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 33%;
+}
+
 .hebergements_box
 {
     background: white;
-    height: 250px;
-    width: 300px;
+    height: 200px;
+    width: 33%;
     padding: 5px;
     border-radius: 15px;
-    text-align: left;
+    text-align: justify;
     font-size: small;
     box-sizing: border-box;
-    margin: 5px;
+    margin: 0.6%;
 }
 
 .hebergements_box img
 {
-	height: 70%;
-	width: 95%;
+	height: 114px;
+	width: 96%;
 	border-radius: 15px 15px 0 0;
 	margin: auto;
 	display: flex;

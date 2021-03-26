@@ -14,12 +14,12 @@
 <!-- En-tête -->
 		<header>
 			<div id="logo">
-				<img src="images/Reservia@3x.png" alt="Logo de Reservia" /> <!-- réduire la taille du logo -->
+				<img src="images/Reservia.svg" alt="Logo de Reservia" /> <!-- réduire la taille du logo -->
 			</div>
 			<nav id="">
 				<ul>
-					<li><a href="#hebergements">Hébergements</a></li> <!-- css : changer les couleurs des liens au survol et les mettre en référence + mise en page ligne à droite -->
-					<li><a href="#activites">Activités</a></li> <!-- css : changer les couleurs des liens au survol et les mettre en référence + mise en page ligne à droite -->
+					<li><a class="navigation" href="#hebergements">Hébergements</a></li> <!-- css : changer les couleurs des liens au survol et les mettre en référence + mise en page ligne à droite -->
+					<li><a class="navigation" href="#activites">Activités</a></li> <!-- css : changer les couleurs des liens au survol et les mettre en référence + mise en page ligne à droite -->
 					<li><a id="inscription" href="#">S'inscrire</a></li> <!-- lient vers un formulaire de création de compte ? css : changer les couleurs des liens au survol et les mettre en référence + mise en page ligne à droite -->
 				</ul>
 			</nav>
@@ -28,7 +28,7 @@
 <!-- div 1 présentation générale -->
 		<section id="presentation">
 			<div id="recherche">
-				<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 				<p>En plein centre ville ou en pleine nature</p>
 				<form method="post" action="traitement.php"> <!-- pas de page PHP pour le traitement des données -->
                 	<p>
@@ -41,13 +41,13 @@
 
 			<div id="filtres"> <!-- CSS : mettre en ligne cette div -->
 			<!-- sélection de filtres/critères = boutons ou checkbox à sélectionner ? + logos à intégrer + changement au survol
-				<p><h3>Filtes</h3></p>
+				<p><h2>Filtes</h2></p>
 				<p>Economique<p> 
 				<p>Familial</p>
 				<p>Romantique</p>
 				<p>Animaux</p> 
 			-->
-				<h3>Filtres</h3><!-- faire un tag a au lieu de input -->
+				<h2>Filtres</h2><!-- faire un tag a au lieu de input -->
 				<p class=""><label for="animaux"><button style='font-size: auto'><i class='fas fa-money-bill-wave'></i></button> Economique</label></p>
 				<p class=""><label for="familial"><button style='font-size: auto'><i class='fas fa-child'></i></button> Familial</label></p>
 				<P class=""><label for="romantique"><button style='font-size: auto'><i class='fas fa-heart'></i></button> Romantique</label></P>
@@ -61,90 +61,114 @@
 <!-- div 2 les hébergements correspondant aux critères --> 
 		<section id="hebergements"> <!-- changer pour section utiliser les flexbox -->
 			<article>
-			<h2>Hébergements à Marseille</h2> <!-- 7 divisions  -->
-			<div id="hotels_select"> <!-- modifier en UL + id -->
-	            <div class="hebergements_box"> <!-- modifier la div pour un lien a + href et intégrer dans une liste UL plus logique ? -->
-    	       	    <a href="" class="">
-    	       	    	<img src="images/CannebiereSmall.jpg" alt="hotel_cannebiere" /> <!-- modifier image vers "article" pour mise en forme CSS ? + redimensionner l'image CSS -->
-	               		<h4>Auberge la Cannebière</h4><br /> <!-- ajouter le lien vers une image plus grande ? -->
-	               		<p>Nuit à partir de <strong>25 €</strong></p><br />
-	               		<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-	               	</a>
-	    	   	</div>
-	            <div class="hebergements_box">
-    	       	    <a href="">
-    	       	    	<img src="images/PortSmall.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
-	    	           	<h4>Hôtel du port</h4><br /> <!-- ajouter le lien vers une image plus grande ? -->
-	    	           	<p>Nuit à partir de <strong>52 €</strong></p><br />
-	    	           	<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></P>
-	    	        </a>
-    	    	</div>        	
-        	   	<div class="hebergements_box">
-            	    <a href="">
-            	    	<img src="images/LesMouettesSmall.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
-        				<h4>Hôtel Les mouettes</h4><br /> <!-- ajouter le lien vers une image plus grande ? -->
-           				<p>Nuit à partir de <strong>76 €</strong></p><br />
-           				<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
-           			</a>
-        		</div>
-            	<div class="hebergements_box">
-                	<a href="">
-                		<img src="images/MerSmall.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
-    	           		<h4>Hôtel de la mer</h4><br /> <!-- ajouter le lien vers une image plus grande ? -->
-    	           		<p>Nuit à partir de <strong>46 €</strong></p><br />
-           				<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
-    	           	</a>
-        		</div>
-            	<div class="hebergements_box">
-           	    	<a href="">
-           	    		<img src="images/LePanierSmall.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
-	       	        	<h4>Auberge Le Panier</h4><br /> <!-- ajouter le lien vers une image plus grande ? -->
-	       	        	<p>Nuit à partir de <strong>23 €</strong></p><br />
-           				<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
-                	</a>
-        		</div>
-            	<div class="hebergements_box">
-            		<a href="">
-	       	    		<img src="images/AminaSmall.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
-    	       	    	<h4>Hôtel chez Amina</h4><br /> <!-- ajouter le lien vers une image plus grande ? -->
-    	       	    	<p>Nuit à partir de <strong>96 €</strong></p><br />
-	                	<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></P>
-	       	    	</a>
-        		</div>    	
-        	</div>
-        	<p><a href="">Afficher plus</a></p> <!-- div à rajouter ? -->
-        	</article>
+				<h1>Hébergements à Marseille</h1> <!-- 7 divisions  -->
+				<div id="hotels_select"> <!-- modifier en UL + id -->
+					<ul id="selection">
+						<li>
+	            			<div class="hebergements_box"> <!-- modifier la div pour un lien a + href et intégrer dans une liste UL plus logique ? -->
+    	       	    			<a href="" class="">
+    	       	    				<img src="images/CannebiereSmall.jpg" alt="hotel_cannebiere" /> <!-- modifier image vers "article" pour mise en forme CSS ? + redimensionner l'image CSS -->
+	               					<h4>Auberge la Cannebière</h4><br /> <!-- ajouter le lien vers une image plus grande ? -->
+									<p>Nuit à partir de <strong>25 €</strong></p><br />
+	               					<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+	               				</a>
+	    		   			</div>
+						</li>
+						<li>
+				            <div class="hebergements_box">
+    				       	    <a href="">
+    		       			    	<img src="images/PortSmall.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
+	    		           			<h4>Hôtel du port</h4><br /> <!-- ajouter le lien vers une image plus grande ? -->
+	    	    	       			<p>Nuit à partir de <strong>52 €</strong></p><br />
+	    	        	   			<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></P>
+		    	        		</a>
+    		    			</div>
+						</li>
+						<li>
+							<div class="hebergements_box">
+								<a href="">
+									<img src="images/LesMouettesSmall.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
+									<h4>Hôtel Les mouettes</h4><br /> <!-- ajouter le lien vers une image plus grande ? -->
+									<p>Nuit à partir de <strong>76 €</strong></p><br />
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+								</a>
+							</div>
+						</li>	        	
+						<li>
+							<div class="hebergements_box">
+								<a href="">
+									<img src="images/MerSmall.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
+									<h4>Hôtel de la mer</h4><br /> <!-- ajouter le lien vers une image plus grande ? -->
+									<p>Nuit à partir de <strong>46 €</strong></p><br />
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="hebergements_box">
+								<a href="">
+									<img src="images/LePanierSmall.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
+									<h4>Auberge Le Panier</h4><br /> <!-- ajouter le lien vers une image plus grande ? -->
+									<p>Nuit à partir de <strong>23 €</strong></p><br />
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="hebergements_box">
+								<a href="">
+									<img src="images/AminaSmall.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
+									<h4>Hôtel chez Amina</h4><br /> <!-- ajouter le lien vers une image plus grande ? -->
+									<p>Nuit à partir de <strong>96 €</strong></p><br />
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></P>
+								</a>
+							</div>						
+						</li>
+					</ul>    	
+    	    	</div>
+        		<p><h2></h2><a href="">Afficher plus</a></h2></p> <!-- div à rajouter ? -->
+			</article>
 			<aside id="hotels_pop"> <!-- utiliser les flexbox -->
-				<h2>Les plus populaires</h2> <!-- ajouter une image/logo flottante (avec un lien ?) -->
-        	    <div class="popular_box">
-   	        	    <a href="">
-   	        	    	<img src="images/SoleilMatinSmall.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
-    	            	<h4>Hôtel Le soleil du matin</h4> <!-- ajouter le lien vers une image plus grande ? -->
-   	        	    	<p>Nuit à partir de <strong>128 €</strong></p><br />
-    	            	<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></P>
-   	            	</a> <!-- problème de mise en page si intégration au lien des deux derniers p? -->
-   		    	</div>
-       		    <div class="popular_box">
-           		    <a href="">
-           		    	<img src="images/CoeurdeleauSmall.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
-               			<h4>Au coeur de l'eau Chambres d'hôtes</h4> <!-- ajouter le lien vers une image plus grande ? faire retour à la ligne pour rentrer dans le cadre -->
-   	        	    	<p>Nuit à partir de <strong>72 €</strong></p><br />
-    	            	<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></P>
-               		</a>
-   	    		</div>
-       	    	<div class="popular_box">
-           	    	<a href="">
-           	    		<img src="images/ToutbleuetblancSmall.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
-               			<h4>Hôtel Tout bleu et Blanc</h4> <!-- ajouter le lien vers une image plus grande ? -->
-               			<p>Nuit à partir de <strong>68 €</strong></p><br />
-    	            	<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></P>
-           			</a>
-       			</div>
+				<h1>Les plus populaires</h1> <!-- ajouter une image/logo flottante (avec un lien ?) -->
+        	    <div id="populaires">
+					<ul>
+						<li>
+							<div class="popular_box">
+								<a href="">
+									<img src="images/SoleilMatinSmall.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
+									<h4>Hôtel Le soleil du matin</h4> <!-- ajouter le lien vers une image plus grande ? -->
+									<p>Nuit à partir de <strong>128 €</strong></p><br />
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></P>
+								</a> <!-- problème de mise en page si intégration au lien des deux derniers p? -->
+							</div>
+						</li>
+						<li>
+							<div class="popular_box">
+								<a href="">
+									<img src="images/CoeurdeleauSmall.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
+									<h4>Au coeur de l'eau Chambres d'hôtes</h4> <!-- ajouter le lien vers une image plus grande ? faire retour à la ligne pour rentrer dans le cadre -->
+									<p>Nuit à partir de <strong>72 €</strong></p><br />
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></P>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="popular_box">
+								<a href="">
+									<img src="images/ToutbleuetblancSmall.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
+									<h4>Hôtel Tout bleu et Blanc</h4> <!-- ajouter le lien vers une image plus grande ? -->
+									<p>Nuit à partir de <strong>68 €</strong></p><br />
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></P>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</aside>
 		</section>
 <!-- div 3 : activités -->
 		<section id="activites"> <!-- utiliser les flexbox -->
-			<h2>Activités à Marseille</h2> <!-- titre doit changer selon la ville recherchée dans la section/div recherche --><!-- 6 divisions  -->
+			<h1>Activités à Marseille</h1> <!-- titre doit changer selon la ville recherchée dans la section/div recherche --><!-- 6 divisions  -->
         	<section> <!-- à valider -->
         		<div class="image xlarge"> <!-- différentes class pour différencier les redimensions -->
             		<a href="">
@@ -200,7 +224,6 @@
 				<p><a href="#">Charte qualité</a></p>
 				<p><a href="#">Soumetre votre hôtel</a></p>
 			</div>
-
 <!-- Assistance -->
 			<div id="assistance">
 				<h4>Assistance</h4>
