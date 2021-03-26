@@ -132,13 +132,6 @@ article h1 {display: block}
 	width : 80%;
 }
 
-#selection li
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-
 .hebergements_box
 {
     background: white;
@@ -163,9 +156,6 @@ article h1 {display: block}
 	width: 96%;
 	border-radius: 15px 15px 0 0;
 	margin: 0.6%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
 }
 
 /* DIV hôtels populaires */
