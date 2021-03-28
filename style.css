@@ -23,8 +23,6 @@ header
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	width: 93%;
-	margin: auto 3.5%;
 }
 
 #logo
@@ -32,6 +30,7 @@ header
 	display: flex;
 	flex-direction: row;
 	align-items: baseline;
+	margin-left: 3.5%;
 }
 
 header img
@@ -40,10 +39,20 @@ header img
 	height: 40px;
 }
 
+#navigation
+{
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+	margin-right: 3.5%;
+}
+
 nav ul
 {
 	list-style-type: none;
 	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
 }
 
 nav li {margin-right: 3.5%;} /* modifier pour mettre en unitée relative */
@@ -59,15 +68,16 @@ nav a:hover
 	border-top-color: #0065FC;
 }
 
-#inscription {font-weight: bold;}
+#inscription 
+{
+	font-weight: bold;
+	align-self: center;
+}
 
 /* SECTION PRESENTATION */
 #presentation
 {
 	background-color: green;
-	width: 93%;
-	margin: auto;
-	margin: auto 3.5%;
 }
 
 #recherche
@@ -77,15 +87,12 @@ nav a:hover
 
 #filtres
 {
+	background-color: grey;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	align-items: flex-start;
-}
-
-#presentation
-{
-
+	justify-content: flex-start;
+	align-items: center;
+	margin: none 3.5%;
 }
 
 /* SECTION HEBERGEMENTS */
@@ -94,7 +101,7 @@ nav a:hover
 	background-color: grey;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
+	flex-direction: row;
 	width: 93%;
 	margin: auto 3.5%;
 }
@@ -119,24 +126,32 @@ article
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	margin: none 3.5%;
 }
 
 article h1 {display: block}
 
-#hotel_select
+#hotel_select_1
 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	width : 80%;
+}
+
+#hotel_select_2
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .hebergements_box
 {
     background: white;
     height: 200px;
-    width: 33%;
+    width: 30%;
     padding: 0.6%;
     border-radius: 15px;
     text-align: justify;
@@ -153,16 +168,45 @@ article h1 {display: block}
 .hebergements_box img
 {
 	height: 114px;
-	width: 96%;
+	width: 100%;
 	border-radius: 15px 15px 0 0;
 	margin: 0.6%;
 }
 
 /* DIV hôtels populaires */
+aside
+{
+	background-color: #F2F2F2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
 #populaire
 {
 	background-color: #F2F2F2;
-	width: 20%;
+	width: 19%;
+}
+
+.popular_box
+{
+    background: white;
+    height: 200px;
+    width: 30%;
+    padding: 0.6%;
+    border-radius: 15px;
+    text-align: justify;
+    font-size: small;
+    box-sizing: border-box;
+    margin: 0.6%;
+}
+
+.popular_box img
+{
+	height: 114px;
+	width: 100%;
+	border-radius: 15px 15px 0 0;
+	margin: 0.6%;
 }
 
 /* SECTION ACTIVITES */
