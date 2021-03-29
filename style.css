@@ -16,6 +16,12 @@
 	background-color: #E2DDFF; /*couleur pour visualiser */
 }
 
+h1, h2, h3
+{
+	font-weight: bold;
+}
+
+
 /* HEADER */
 header
 {
@@ -31,12 +37,6 @@ header
 	flex-direction: row;
 	align-items: baseline;
 	margin-left: 3.5%;
-}
-
-header img
-{
-	width: 100px; /* modifier la largeur et hauteur pour que le logo ne change pas en taille en fonction de la taille de l'écran */
-	height: 40px;
 }
 
 #navigation
@@ -82,7 +82,30 @@ nav a:hover
 
 #recherche
 {
+	margin-left: 3.5%;
+}
 
+#recherche i
+{
+	background-color: #f2f2f2;
+	width: 50px;
+	height: 50px;
+	border-radius: 12px 0 0 12px;
+}
+
+#destination
+{
+	height: 50px;
+	border: solid;
+	border-color: #f2f2f2;
+}
+
+.button-1
+{
+	background-color: #0065fc;
+	color: white;
+	height: 50px;
+	border-radius: 0 12px 12px 0;
 }
 
 #filtres
@@ -92,7 +115,45 @@ nav a:hover
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	margin: none 3.5%;
+	margin-left: 3.5%;
+}
+
+.button-2
+{
+	height: 50px;
+	background-color: white;
+	text-align: center;
+	vertical-align: center;
+	font-weight: bold;
+	border: solid thin; 
+	border-radius: none 25px;
+}
+
+#filtres i
+{
+	width: 50px;
+	height: 50px;
+	background-color: #deebff;
+	color: #0065fc;
+	border: solid;
+	border-color: #deebff;
+	border-radius: 25px;
+}
+
+#information
+{
+	margin-left: 3.5%;
+}
+
+#information i
+{
+	border: solid thin;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	color: #0065fc;
+	border-color: #dedede;
+
 }
 
 /* SECTION HEBERGEMENTS */
@@ -100,43 +161,45 @@ nav a:hover
 {
 	background-color: grey;
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: row;
-	width: 93%;
-	margin: auto 3.5%;
+	justify-content: space-around;
+	margin: auto 2.1%;
 }
 
 article
 {
+	height: 626px;
 	width: 61.1%;
-}
-
-aside
-{
-	flex: 1.2;
-	position: relative;
-	background-color: #F2F2F2;
-	width: 29.1%;
-}
-
-/* DIV hotel_selectionnés */
-article
-{
+	margin: auto 1.5%;
+	border-radius: 1.5%; 
 	background-color: #F2F2F2;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	margin: none 3.5%;
 }
 
-article h1 {display: block}
+aside
+{
+	height: 626px;
+	width: 29.1%;
+	margin: auto 1.5%;
+	border-radius: 1.5%;
+	background-color: #F2F2F2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
 
+/* div hotel_selectionnés */
 #hotel_select_1
 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	margin-left: 0.7%;
+	margin-right: 0.7%%;
+	margin-bottom: 30px;
 }
 
 #hotel_select_2
@@ -145,43 +208,31 @@ article h1 {display: block}
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	margin-left: 0.7%;
+	margin-right: 0.7%;
 }
 
 .hebergements_box
 {
     background: white;
-    height: 200px;
-    width: 30%;
-    padding: 0.6%;
-    border-radius: 15px;
+    height: 199px;
+    width: 28%;
+    border-radius: 6%;
     text-align: justify;
     font-size: small;
     box-sizing: border-box;
-    margin: 0.6%;
-}
-
-.texte
-{
-	text-align: center;
+    margin: auto 1%;
 }
 
 .hebergements_box img
 {
 	height: 114px;
-	width: 100%;
-	border-radius: 15px 15px 0 0;
-	margin: 0.6%;
+	width: 96%;
+	border-radius: 6% 6% 0 0;
+	margin: 1% 1% none 1%;
 }
 
 /* DIV hôtels populaires */
-aside
-{
-	background-color: #F2F2F2;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-
 #populaire
 {
 	background-color: #F2F2F2;
@@ -191,9 +242,8 @@ aside
 .popular_box
 {
     background: white;
-    height: 200px;
-    width: 30%;
-    padding: 0.6%;
+	height: 144px;
+
     border-radius: 15px;
     text-align: justify;
     font-size: small;
@@ -214,9 +264,6 @@ aside
 {
 	background-color: blue;
 	display: flex;
-	width: 95%;
-	margin: auto;
-	padding: 10px;
 }
 
 
