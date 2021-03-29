@@ -3,7 +3,7 @@
 @font-face
 {
 	font-family: "Raleway";
-	src: url("Raleway-Regular.ttf") format("truetype");
+	src: url("font/Raleway-Regular.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -91,6 +91,8 @@ nav a:hover
 	width: 50px;
 	height: 50px;
 	border-radius: 12px 0 0 12px;
+	position: relative;
+	bottom: 16px;
 }
 
 #destination
