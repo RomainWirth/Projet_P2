@@ -13,7 +13,7 @@
 	max-width: 1440px;
 	margin: 0 auto;
 	font-family: "Raleway", sans-serif;
-	background-color: #E2DDFF; /*couleur pour visualiser */
+	background-color: hsl(249, 100%, 93%); /*couleur pour visualiser */
 }
 
 h1, h2, h3
@@ -65,7 +65,7 @@ nav a
 nav a:hover
 {
 	color: #0065FC;
-	border-top-color: #0065FC;
+	border-top: solid #0065FC;
 }
 
 #inscription 
@@ -87,12 +87,11 @@ nav a:hover
 
 #recherche i
 {
+	font-size: 24px;
 	background-color: #f2f2f2;
 	width: 50px;
 	height: 50px;
 	border-radius: 12px 0 0 12px;
-	position: relative;
-	bottom: 16px;
 }
 
 #destination
@@ -100,6 +99,7 @@ nav a:hover
 	height: 50px;
 	border: solid;
 	border-color: #f2f2f2;
+	text-align: center;
 }
 
 .button-1
@@ -123,23 +123,24 @@ nav a:hover
 .button-2
 {
 	height: 50px;
+	width: auto;
 	background-color: white;
-	text-align: center;
-	vertical-align: center;
 	font-weight: bold;
 	border: solid thin; 
-	border-radius: none 25px;
+	border-radius: none 50%;
 }
 
 #filtres i
 {
-	width: 50px;
-	height: 50px;
-	background-color: #deebff;
+	font-size: 30px;
+
 	color: #0065fc;
-	border: solid;
-	border-color: #deebff;
-	border-radius: 25px;
+	background-color: #deebff;
+	border-radius: 50%;
+	border: 1x solid #deebff;
+	padding: 10px;
+
+
 }
 
 #information
@@ -216,41 +217,31 @@ aside
 
 .hebergements_box
 {
-    background: white;
+    background: blue;
     height: 199px;
     width: 28%;
     border-radius: 6%;
-    text-align: justify;
+    text-align: left;
     font-size: small;
-    box-sizing: border-box;
-    margin: auto 1%;
 }
 
 .hebergements_box img
 {
 	height: 114px;
-	width: 96%;
+	width: 100%;
 	border-radius: 6% 6% 0 0;
-	margin: 1% 1% none 1%;
 }
 
 /* DIV hôtels populaires */
-#populaire
-{
-	background-color: #F2F2F2;
-	width: 19%;
-}
 
 .popular_box
 {
-    background: white;
+    background: blue;
 	height: 144px;
-
     border-radius: 15px;
     text-align: justify;
     font-size: small;
-    box-sizing: border-box;
-    margin: 0.6%;
+
 }
 
 .popular_box img
@@ -258,7 +249,6 @@ aside
 	height: 114px;
 	width: 100%;
 	border-radius: 15px 15px 0 0;
-	margin: 0.6%;
 }
 
 /* SECTION ACTIVITES */
