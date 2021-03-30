@@ -33,9 +33,6 @@ header
 
 #logo
 {
-	display: flex;
-	flex-direction: row;
-	align-items: baseline;
 	margin-left: 3.5%;
 }
 
@@ -55,17 +52,25 @@ nav ul
 	justify-content: flex-end;
 }
 
-nav li {margin-right: 3.5%;} /* modifier pour mettre en unitée relative */
+nav li 
+{
+	margin-right: 4.7%;
+	margin-left: 4.7%;
+}
+
 
 nav a
 {
 	color: black;
+	display: inline-block;
+	line-height: 50px;
+	align-items: center;	
 }
 
 nav a:hover
 {
 	color: #0065FC;
-	border-top: solid #0065FC;
+	border-top: solid thin #0065FC;
 }
 
 #inscription 
@@ -87,11 +92,14 @@ nav a:hover
 
 #recherche i
 {
+	display: inline-block;
 	font-size: 24px;
 	background-color: #f2f2f2;
 	width: 50px;
 	height: 50px;
+	text-align: center;
 	border-radius: 12px 0 0 12px;
+	line-height: 41px;
 }
 
 #destination
@@ -108,6 +116,9 @@ nav a:hover
 	color: white;
 	height: 50px;
 	border-radius: 0 12px 12px 0;
+	position: relative;
+	right: 5px;
+
 }
 
 #filtres
@@ -118,29 +129,34 @@ nav a:hover
 	justify-content: flex-start;
 	align-items: center;
 	margin-left: 3.5%;
+	line-height: 50px;
 }
 
 .button-2
 {
+	display: inline-block;
 	height: 50px;
-	width: auto;
 	background-color: white;
 	font-weight: bold;
-	border: solid thin; 
-	border-radius: none 50%;
+	border: 2px solid #deebff; 
+	border-radius: 27px;
+	margin-left: 1.7%;
 }
 
 #filtres i
 {
-	font-size: 30px;
-
+	display: inline-block;
+	text-align: center;
+	font-size: 17px;
 	color: #0065fc;
 	background-color: #deebff;
+	height: 50px;
+	width: 50px;
 	border-radius: 50%;
-	border: 1x solid #deebff;
-	padding: 10px;
-
-
+	border: 2x solid #deebff;
+	line-height: 50px;
+	position: relative;
+	right: 2px;
 }
 
 #information
@@ -150,13 +166,16 @@ nav a:hover
 
 #information i
 {
+	display: inline-block;
+	text-align: center;
 	border: solid thin;
 	border-radius: 50%;
 	width: 24px;
 	height: 24px;
 	color: #0065fc;
 	border-color: #dedede;
-
+	font-size: 12px;
+	line-height: 24px;
 }
 
 /* SECTION HEBERGEMENTS */
@@ -165,15 +184,16 @@ nav a:hover
 	background-color: grey;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	margin: auto 2.1%;
+	justify-content: center;
+	margin: auto;
 }
 
 article
 {
 	height: 626px;
 	width: 61.1%;
-	margin: auto 1.5%;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
 	border-radius: 1.5%; 
 	background-color: #F2F2F2;
 	display: flex;
@@ -185,15 +205,17 @@ aside
 {
 	height: 626px;
 	width: 29.1%;
-	margin: auto 1.5%;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
 	border-radius: 1.5%;
 	background-color: #F2F2F2;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	align-items: center;
 }
 
-/* div hotel_selectionnés */
+/* Article : div hotel_selectionnés */
 #hotel_select_1
 {
 	display: flex;
@@ -232,32 +254,61 @@ aside
 	border-radius: 6% 6% 0 0;
 }
 
-/* DIV hôtels populaires */
+/* ASIDE : DIV hôtels populaires */
+#popular
+{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-content: space-around;
+}
 
 .popular_box
 {
     background: blue;
-	height: 144px;
+	height: 134px;
     border-radius: 15px;
-    text-align: justify;
+    text-align: left;
     font-size: small;
-
+	width: 82%;
 }
 
 .popular_box img
 {
-	height: 114px;
-	width: 100%;
-	border-radius: 15px 15px 0 0;
+	height: 134px;
+	width: 127px;
+	border-radius: 15px 0 0 15px;
+	float: left;
 }
 
 /* SECTION ACTIVITES */
 #activites
 {
 	background-color: blue;
-	display: flex;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 43px;
+	grid-auto-rows: minmax(302px, auto)
 }
 
+.activites_box_1 {grid-column: 1 / 4; grid-row: 1; background-color: white;}
+
+.activites_box_2 {grid-column: 2 / 4; grid-row: 1 / 2;}
+
+.activites_box_3 {grid-column: 2 / 4; grid-row: 2 / 2;}
+
+.activites_box_4 {grid-column: 3 / 4; grid-row: 1;}
+
+.activites_box_5 {grid-column: 4 / 4; grid-row: 1 / 2;}
+
+.activites_box_6 {grid-column: 4 / 4; grid-row: 2 / 2;}
+
+#activites_box img 
+{
+	height: auto;
+	width: 302px;
+}
 
 /* FOOTER */
 footer
