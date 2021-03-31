@@ -53,8 +53,10 @@
 <!-- section 2 les hébergements correspondant aux critères --> 
 		<section id="hebergements"> <!-- changer pour section utiliser les flexbox -->
 			<article>
-				<h1>Hébergements à Marseille</h1> <!-- 7 divisions  -->
-				<div id="hotel_select_1"> <!-- modifier en UL + id -->
+				<div id="titre_hebergement">
+					<h1>Hébergements à Marseille</h1> <!-- 7 divisions  -->
+				</div>
+				<div id="hotel_select_1">
            			<div class="hebergements_box"> <!-- modifier la div pour un lien a + href et intégrer dans une liste UL plus logique ? -->
     	       	    	<a href="" class="">
     	       	    		<img src="images/CannebiereSmall.jpg" alt="hotel_cannebiere" /> <!-- modifier image vers "article" pour mise en forme CSS ? + redimensionner l'image CSS -->
@@ -118,10 +120,14 @@
 						</div>						
 					</div>	   	
     	    	</div>
-        		<p><h2><a href="more_hotels">Afficher plus</a></h2></p> <!-- div à rajouter ? -->
+        		<div id="afficher_plus">
+					<h2><a href="more_hotels">Afficher plus</a></h2></p>
+				</div>
 			</article>
 			<aside> <!-- utiliser les flexbox -->
-				<h1>Les plus populaires <i style='font-size:24px' class='fas'>&#xf201;</i></h1> <!-- ajouter une image/logo flottante (avec un lien ?) -->
+				<div id="titre_popular">
+					<h1>Les plus populaires</h1><i style='font-size:24px' class='fas'>&#xf201;</i> <!-- ajouter une image/logo flottante (avec un lien ?) -->
+				</div>
         	    <div id="popular">
 					<div class="popular_box">
 						<a href="">
@@ -152,7 +158,9 @@
 		</section>
 <!-- section 3 : activités -->
 		<section id="activites"> <!-- utiliser les flexbox ou CSS GRID -->
-			<h1>Activités à Marseille</h1> <!-- titre doit changer selon la ville recherchée dans la section/div recherche --><!-- 6 divisions  -->
+			<div id="titre">
+				<h1>Activités à Marseille</h1> <!-- titre doit changer selon la ville recherchée dans la section/div recherche --><!-- 6 divisions  -->
+			</div>
         	<div id="activites_box"> <!-- à valider -->
         		<div class="activites_box_1"> <!-- différentes class pour différencier les redimensions -->
             		<a href="#">
@@ -162,43 +170,43 @@
     	    	</div>
         		<div class="activites_box_2">
             		<a href="#">
-            			<img src="images/PomeguesMedium.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
+            			<img src="..." alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
             			<h3>Fort de Pomègues</h3> <!-- ajouter le lien vers une image plus grande ? -->
             		</a>
         		</div>
         		<div class="activites_box_3">
 	            	<a href="#">
-	            		<img src="images/FrioulMedium.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
+	            		<img src="..." alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
     	        		<h3>Îles du Frioul</h3> <!-- ajouter le lien vers une image plus grande ? -->
     	        	</a>
         		</div>
         		<div class="activites_box_4">
         			<a href="#">
-        				<img src="images/CalanquesMedium.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
+        				<img src="..." alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
             			<h3>Parc National des Calanques</h3> <!-- ajouter le lien vers une image plus grande ? -->
             		</a>
 	        	</div>
     	    	<div class="activites_box_5">
         	    	<a href="#">
-        	    		<img src="images/LaGardeMedium.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
+        	    		<img src="..." alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
             			<h3>Notre-Dame-de-la-Garde</h3> <!-- ajouter le lien vers une image plus grande ? -->
             		</a>
         		</div>
         		<div class="activites_box_6">
     	        	<a href="#">
-    	        		<img src="images/LongchampMedium.jpg" alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
+    	        		<img src="..." alt="" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
         	    		<h3>Parc Longchamp</h3> <!-- ajouter le lien vers une image plus grande ? -->
         	    	</a>
         		</div>
-        	</section>        		
+        	</div>        		
 		</section>
 <!-- pied de page -->
 <!-- ajouter les liens aux différentes parties + mise en forme CSS -->
 		<footer>
 <!-- a propos -->
 			<div id="a_propos">
-				<h3>A propos</h3>
 				<ul>
+					<li><h3>A propos</h3></li>
 					<li><a href="#">Fonctionnement du site</a></li>
 					<li><a href="#">Conditions générales de vente</a></li>
 					<li><a href="#">Données et confidentialité</a></li>
@@ -206,16 +214,16 @@
 			</div>
 <!-- Nos hébergements -->
 			<div id="nous_rejoindre">
-				<h3>Nos hébergements</h3>
 				<ul>
+					<li><h3>Nos hébergements</h3></li>
 					<li><a href="#">Charte qualité</a></li>
 					<li><a href="#">Soumetre votre hôtel</a></li>
 				</ul>
 			</div>
 <!-- Assistance -->
 			<div id="assistance">
-				<h3>Assistance</h3>
 				<ul>
+					<li><h3>Assistance</h3></li>
 					<li><a href="#">Centre d'aide</a></li>
 					<li><a href="#">Nous contacter</a></li>
 				</ul>
