@@ -282,65 +282,144 @@ aside {
 	margin-left: 3.5%;
 }
 
-#activites_box {
+	/* CSS GRID */
+#activites_grid {
 	background-color: blue;
 	margin: 0 3.5% 0 3.5%;
-	height: 445px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: 445px;
 	grid-gap: 44px;
 }
 
+	/* COLONNE 1 */
+.activites_column_1 {grid-column: 1 / span 1;}
+
 .activites_box_1 {
-	grid-column-start: 1; 
-	grid-row: 1 / span 2;
-	background-color: white;
-	display: block;
+	position: relative;
+	width: 302px;
+	height: 445px;
+}
+
+#vieux_port_img {
+	position: absolute;
+	z-index: 1;
 	overflow: hidden;
 	width: 302px;
-	max-height: 390px;
-	overflow: hidden;
-	position: relative;
-	border-radius: 15px 15px 0 0;
+	height: 445px;
+	border-radius: 15px;
+	background-image: url(images/VieuxPortMedium.jpg); 
+	background-position: 48% 70%;
+	background-size: 225%;
 }
 
-.vieux_port {
+.titre_activites {
 	position: absolute;
-	left: -65%;
-	right: 28.5%;
-	top: 0px;
+	z-index: 2;
+	background-color: white;
+	width: 302px;
+	height: 55px;
+	bottom: 0px;
+	border-radius: 0 0 15px 15px;
 }
+
+	/* COLONNE 2 */
+.activies_column_2 {grid-column: 2 / span 1;}
 
 .activites_box_2 {
-	grid-column-start: 2; 
-	grid-row-start: 1; 
-	background-color: red
+	position: relative;
+	width: 302px;
+	height: 236px;
+}
+
+#pomegues_img {
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+	width: 302px;
+	height: 236px;
+	border-radius: 15px;
+	background-image: url(images/PomeguesMedium.jpg);
+	background-position: center;
+	background-size: 100%;
 }
 
 .activites_box_3 {
-	grid-column-start: 2; 
-	grid-row-start: 2; 
-	background-color: yellow
+	position: relative;
+	width: 302px;
+	height: 164px;
 }
+
+#frioul_img {
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+	width: 302px;
+	height: 164px;
+	border-radius: 15px;
+	background-image: url(images/FrioulMedium.jpg);
+	background-position: center;
+	background-size: 100%;
+}
+
+	/* COLONNE 3 */
+.activies_column_3 {grid-column: 3 / span 1;}
 
 .activites_box_4 {
-	grid-column-start: 3; 
-	grid-row-start: 1; 
-	grid-row-end: span 2;
-	background-color: green;
+	position: relative;
+	width: 302px;
+	height: 445px;
 }
 
+#calanques_img {
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+	width: 302px;
+	height: 445px;
+	border-radius: 15px;
+	background-image: url(images/CalanquesMedium.jpg);
+	background-position: top center;
+	background-size: 200%; /* intégrer du découpage d'image ? */
+}
+
+	/* COLONNE 4 */
+.activites_column_4 {grid-column: 4 / span 1;}
+
 .activites_box_5 {
-	grid-column-start: 4; 
-	grid-row-start: 1;
-	background-color: black
+	position: relative;
+	width: 302px;
+	height: 194px;
+}
+
+#la_garde_img {
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+	width: 302px;
+	height: 194px;
+	border-radius: 15px;
+	background-image: url(images/LaGardeMedium.jpg);
+	background-position: top center;
+	background-size: 80%;
 }
 
 .activites_box_6 {
-	grid-column-start: 4; 
-	grid-row-start: 2; 
-	background-color: purple;
+	position: relative;
+	width: 302px;
+	height: 209px;
+}
+
+#longchamp_img {
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+	width: 302px;
+	height: 209px;
+	border-radius: 15px;
+	background-image: url(images/LongchampMedium.jpg);
+	background-position: top center;
+	background-size: 100%;
 }
 
 /* formater les images pour qu'elle s'intègrent dans les grids */
