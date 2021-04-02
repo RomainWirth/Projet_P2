@@ -244,7 +244,10 @@ aside {
 #titre_popular {
 	align-self: flex-start;
 	margin-left: 38px;
+	display: flex;
 }
+
+#titre_popular i { align-self: center}
 
 #popular {
 	display: flex;
@@ -284,7 +287,6 @@ aside {
 
 	/* CSS GRID */
 #activites_grid {
-	background-color: blue;
 	margin: 0 3.5% 0 3.5%;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -299,6 +301,7 @@ aside {
 	position: relative;
 	width: 302px;
 	height: 445px;
+	border-radius: 15px;
 }
 
 #vieux_port_img {
@@ -330,6 +333,8 @@ aside {
 	position: relative;
 	width: 302px;
 	height: 236px;
+	border-radius: 15px;
+	margin-bottom: 44px;
 }
 
 #pomegues_img {
@@ -347,7 +352,8 @@ aside {
 .activites_box_3 {
 	position: relative;
 	width: 302px;
-	height: 164px;
+	height: 165px;
+	border-radius: 15px;
 }
 
 #frioul_img {
@@ -355,7 +361,7 @@ aside {
 	z-index: 1;
 	overflow: hidden;
 	width: 302px;
-	height: 164px;
+	height: 165px;
 	border-radius: 15px;
 	background-image: url(images/FrioulMedium.jpg);
 	background-position: center;
@@ -369,6 +375,7 @@ aside {
 	position: relative;
 	width: 302px;
 	height: 445px;
+	border-radius: 15px;
 }
 
 #calanques_img {
@@ -380,7 +387,7 @@ aside {
 	border-radius: 15px;
 	background-image: url(images/CalanquesMedium.jpg);
 	background-position: top center;
-	background-size: 200%; /* intégrer du découpage d'image ? */
+	background-size: 200%;
 }
 
 	/* COLONNE 4 */
@@ -390,6 +397,8 @@ aside {
 	position: relative;
 	width: 302px;
 	height: 194px;
+	border-radius: 15px;
+	margin-bottom: 44px;
 }
 
 #la_garde_img {
@@ -407,7 +416,8 @@ aside {
 .activites_box_6 {
 	position: relative;
 	width: 302px;
-	height: 209px;
+	height: 207px;
+	border-radius: 15px;
 }
 
 #longchamp_img {
@@ -415,7 +425,7 @@ aside {
 	z-index: 1;
 	overflow: hidden;
 	width: 302px;
-	height: 209px;
+	height: 207px;
 	border-radius: 15px;
 	background-image: url(images/LongchampMedium.jpg);
 	background-position: top center;
