@@ -105,7 +105,7 @@ nav a:hover {
 	border-radius: 0 12px 12px 0;
 	position: relative;
 	right: 5px;
-
+	border: 0;
 }
 
 #filtres {
@@ -127,6 +127,7 @@ nav a:hover {
 	border-radius: 27px;
 	margin-left: 1.7%;
 	text-align: center;
+	padding-right: 1.5%;
 }
 
 #filtres i {
@@ -301,7 +302,7 @@ aside {
 }
 
 	/* COLONNE 1 */
-.activites_column_1 {grid-column: 1 / span 1;}
+#activites_column_1 {grid-column: 1 / span 1;}
 
 .activites_box_1 {
 	position: relative;
@@ -318,7 +319,7 @@ aside {
 	height: 445px;
 	border-radius: 15px;
 	background-image: url(images/VieuxPortMedium.jpg); 
-	background-position: 48% 70%;
+	background-position: center top;
 	background-size: 225%;
 }
 
@@ -333,7 +334,7 @@ aside {
 }
 
 	/* COLONNE 2 */
-.activies_column_2 {grid-column: 2 / span 1;}
+#activies_column_2 {grid-column: 2 / span 1;}
 
 .activites_box_2 {
 	position: relative;
@@ -375,7 +376,7 @@ aside {
 }
 
 	/* COLONNE 3 */
-.activies_column_3 {grid-column: 3 / span 1;}
+#activies_column_3 {grid-column: 3 / span 1;}
 
 .activites_box_4 {
 	position: relative;
@@ -397,7 +398,7 @@ aside {
 }
 
 	/* COLONNE 4 */
-.activites_column_4 {grid-column: 4 / span 1;}
+#activites_column_4 {grid-column: 4 / span 1;}
 
 .activites_box_5 {
 	position: relative;
