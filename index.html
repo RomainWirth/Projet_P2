@@ -23,152 +23,201 @@
 						<li><a class="navigation" href="#activites">&nbsp;Activités&nbsp;</a></li> <!-- css : changer les couleurs des liens au survol et les mettre en référence + mise en page ligne à droite -->
 					</ul> <!-- enlever la partie s'inscrire et la placer ailleurs -->
 				</nav>
-				<a id="inscription" href="#">S'inscrire</a> <!-- lient vers un formulaire de création de compte ? css : changer les couleurs des liens au survol et les mettre en référence + mise en page ligne à droite -->
+			</div>
+			<div id="inscription">
+				<a href="#">S'inscrire</a>
 			</div>
 		</header>
 <!-- 3 parties principales : 3 sections différentes identifiées -->
 <!-- section 1 présentation générale -->
-		<section id="presentation">
-			<div id="recherche">
+		<section id="recherche">
+			<div id="recherche_texte">
 				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 				<p>En plein centre ville ou en pleine nature</p>
-				<form method="post" action="traitement.php"> <!-- pas de page PHP pour le traitement des données -->
-                	<p>
-                		<label for="Destination"><i style='font-size: auto' class='fas'>&#xf3c5;</i><input type="search" name="destination" id="destination" placeholder="Destination" /></label> <!-- placer le logo dans une div et mettre en forme -->
-                		<input type="submit" value="Rechercher" class="button-1" />
-                	</p>
-            	</form>
 			</div>
-			<div id="filtres"> <!-- CSS : mettre en ligne cette div -->
+			<div id="recherche_ville">
+				<form method="post" action="traitement.php"> <!-- pas de page PHP pour le traitement des données -->
+					<div id="recherche_ville_contenu">
+						<div id="marker">
+							<i style='font-size: auto' class="fas fa-map-marker-alt"></i>
+						</div>
+						<label for="Destination">
+							<input type="search" name="destination" id="destination_critere" placeholder="Destination" />
+						</label> <!-- placer le logo dans une div et mettre en forme -->
+						<input type="submit" value="Rechercher" class="button-1" />
+					</div>
+				</form>
+			</div>
+			<div id="recherche_filtres"> <!-- CSS : mettre en ligne cette div -->
 				<h2>Filtres</h2><!-- faire un tag a au lieu de input -->
 				<a href="#" class="button-2"><i class='fas fa-money-bill-wave'></i>&nbsp;Economique&nbsp;</a>
 				<a href="#" class="button-2"><i class='fas fa-child'></i>&nbsp;Familial&nbsp;</a>
 				<a href="#" class="button-2"><i class='fas fa-heart'></i>&nbsp;Romantique&nbsp;</a>
 				<a href="#" class="button-2"><i class='fas fa-dog'></i>&nbsp;Animaux&nbsp;Autorisés&nbsp;</a>
 			</div>
-			<div id="information">
-				<p><span><i class='fas fa-info'></i></span>Plus de 500 logements sont disponibles dans cette ville</p> <!-- mettre en forme le logo avec un cercle autour -->
+			<div id="recherche_information">
+				<div id="logo_i">
+					<span><i class='fas fa-info'></i></span>
+				</div>
+				<p>Plus de 500 logements sont disponibles dans cette ville</p> <!-- mettre en forme le logo avec un cercle autour -->
 			</div>
 		</section>
 <!-- section 2 les hébergements correspondant aux critères --> 
-		<section id="hebergements"> <!-- changer pour section utiliser les flexbox -->
+		<section id="hebergements">
 			<article>
-				<div id="titre_hebergement">
-					<h1>Hébergements à Marseille</h1> <!-- 7 divisions  -->
+				<div id="hebergements_titre">
+					<h1>Hébergements à Marseille</h1>
 				</div>
-				<div id="hotel_select_1">
-           			<div class="hebergements_box"> <!-- modifier la div pour un lien a + href et intégrer dans une liste UL plus logique ? -->
-    	       	    	<a href="#">
-    	       	    		<img src="images/CannebiereSmall.jpg" alt="Photo Auberge la Cannebière" /> <!-- modifier image vers "article" pour mise en forme CSS ? + redimensionner l'image CSS -->
-	               			<div class="hebergements_box_text">
-								<h3>Auberge la Cannebière</h3><!-- ajouter le lien vers une image plus grande ? -->
+				<div class="hebergements_row">
+					<a href="#">
+						<div class="hebergements_box">
+							<div class="hebergements_box_image">
+								<img src="images/CannebiereMedium.jpg" alt="Photo Auberge la Cannebière" />
+							</div>
+							<div class="hebergements_box_text">
+								<h3>Auberge la Cannebière</h3>
 								<p>Nuit à partir de<strong>&nbsp;25&nbsp;&#128;</strong></p>
 								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
 							</div>
-	               		</a>
-	    		   	</div>
-		            <div class="hebergements_box">
-						<a href="#">
-   	       			    	<img src="images/PortSmall.jpg" alt="Photo Hôtel du Port" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
-							<div class="hebergements_box_text">
-								<h3>Hôtel du port</h3> <!-- ajouter le lien vers une image plus grande ? -->
-    	    	       			<p>Nuit à partir de<strong>&nbsp;52&nbsp;&#128;</strong></p>
-    	        	   			<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></P>
+						</div>
+					</a>
+					<a href="#">
+						<div class="hebergements_box">
+							<div class="hebergements_box_image">
+								<img src="images/PortMedium.jpg" alt="Photo Hôtel du Port" /> 
 							</div>
-						</a>
- 	    			</div>
-					<div class="hebergements_box">
-						<a href="#">
-							<img src="images/LesMouettesSmall.jpg" alt="Photo Hôtel Les mouettes" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
 							<div class="hebergements_box_text">
-								<h3>Hôtel Les mouettes</h3> <!-- ajouter le lien vers une image plus grande ? -->
+								<h3>Hôtel du port</h3>
+   	    	       				<p>Nuit à partir de<strong>&nbsp;52&nbsp;&#128;</strong></p>
+   	        	   				<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></P>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div class="hebergements_box">
+							<div class="hebergements_box_image">
+								<img src="images/LesMouettesMedium.jpg" alt="Photo Hôtel Les mouettes" />
+							</div>
+							<div class="hebergements_box_text">
+								<h3>Hôtel Les mouettes</h3>
 								<p>Nuit à partir de<strong>&nbsp;76&nbsp;&#128;</strong></p>
 								<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
 							</div>
-						</a>
-					</div>
+						</div>
+					</a>
 				</div>
-				<div id="hotel_select_2">
-					<div class="hebergements_box">
-						<a href="#">
-							<img src="images/MerSmall.jpg" alt="Photo Hôtel de la mer" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
+				<div class="hebergements_row">
+					<a href="#">
+						<div class="hebergements_box">
+							<div class="hebergements_box_image">
+								<img src="images/MerMedium.jpg" alt="Photo Hôtel de la mer" />
+							</div>
 							<div class="hebergements_box_text">
-								<h3>Hôtel de la mer</h3> <!-- ajouter le lien vers une image plus grande ? -->
+								<h3>Hôtel de la mer</h3>
 								<p>Nuit à partir de<strong>&nbsp;46&nbsp;&#128;</strong></p>
 								<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
 							</div>
-						</a>
-					</div>
-					<div class="hebergements_box">
-						<a href="#">
-							<img src="images/LePanierSmall.jpg" alt="Photo Auberge Le Panier" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
+						</div>
+					</a>
+					<a href="#">
+						<div class="hebergements_box">
+							<div class="hebergements_box_image">
+								<img src="images/LePanierMedium.jpg" alt="Photo Auberge Le Panier" />
+							</div>
 							<div class="hebergements_box_text">								
-								<h3>Auberge Le Panier</h3> <!-- ajouter le lien vers une image plus grande ? -->
+								<h3>Auberge Le Panier</h3>
 								<p>Nuit à partir de<strong>&nbsp;23&nbsp;&#128;</strong></p>
 								<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
 							</div>
-						</a>
-					</div>
-					<div class="hebergements_box">
-						<a href="#">
-							<img src="images/AminaSmall.jpg" alt="Photo Hôtel chez Amina" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
+						</div>
+					</a>
+					<a href="#">
+						<div class="hebergements_box">
+							<div class="hebergements_box_image">
+								<img src="images/AminaMedium.jpg" alt="Photo Hôtel chez Amina" />
+								</div>
 							<div class="hebergements_box_text">		
-								<h3>Hôtel chez Amina</h3> <!-- ajouter le lien vers une image plus grande ? -->
+								<h3>Hôtel chez Amina</h3>
 								<p>Nuit à partir de<strong>&nbsp;96&nbsp;&#128;</strong></p>
 								<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></P>
 							</div>						
-						</a>
-					</div>	   	
-    	    	</div>
+						</div>	
+					</a> 	
+   	    		</div>
         		<div id="afficher_plus">
 					<h2><a href="more_hotels">Afficher plus</a></h2></p>
 				</div>
 			</article>
-			<aside> <!-- utiliser les flexbox -->
-				<div id="titre_popular">
-					<h1>Les plus populaires</h1><i style='font-size:24px' class='fas'>&#xf201;</i> <!-- ajouter une image/logo flottante (avec un lien ?) -->
+			<aside>
+				<div id="popular_titre">
+					<h1>Les plus populaires</h1>
+					<p><i style='font-size:24px' class='fas'>&#xf201;</i></p>
 				</div>
         	    <div id="popular">
-					<div class="popular_box">
-						<a href="#">
-							<img src="images/SoleilMatinSmall.jpg" alt="Photo Hôtel Le soleil du matin" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
-							<h3>Hôtel Le soleil du matin</h3> <!-- ajouter le lien vers une image plus grande ? -->
-							<p>Nuit à partir de<strong>&nbsp;128&nbsp;&#128;</strong></p>
-							<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></P>
-						</a> <!-- problème de mise en page si intégration au lien des deux derniers p? -->
-					</div>
-					<div class="popular_box">
-						<a href="#">
-							<img src="images/CoeurdeleauSmall.jpg" alt="Photo Au coeur de l'eau Chambres d'hôtes" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
-							<h3>Au coeur de l'eau Chambres d'hôtes</h3> <!-- ajouter le lien vers une image plus grande ? faire retour à la ligne pour rentrer dans le cadre -->
-							<p>Nuit à partir de<strong>&nbsp;72&nbsp;&#128;</strong></p>
-							<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></P>
-						</a>
-					</div>
-					<div class="popular_box">
-						<a href="#">
-							<img src="images/ToutbleuetblancSmall.jpg" alt="Photo Hôtel Tout bleu et Blanc" /> <!-- modifier image vers "article" pour mise en forme CSS ? -->
-							<h3>Hôtel Tout bleu et Blanc</h3> <!-- ajouter le lien vers une image plus grande ? -->
-							<p>Nuit à partir de<strong>&nbsp;68&nbsp;&#128;</strong></p>
-							<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></P>
-						</a>
-					</div>
+					<a href="#">
+						<div class="popular_box">
+							<div class="popular_image">
+								<img src="images/SoleilMatinMedium.jpg" alt="Photo Hôtel Le soleil du matin" />
+							</div>
+							<div class="popular_text">
+								<div class="popular_text_content">
+									<h3>Hôtel Le soleil du matin</h3> 
+									<p>Nuit à partir de<strong>&nbsp;128&nbsp;&#128;</strong></p>
+								</div>
+								<div class="popular_text_rating">
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></P>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div class="popular_box">
+							<div class="popular_image">
+								<img src="images/CoeurdeleauMedium.jpg" alt="Photo Au coeur de l'eau Chambres d'hôtes" />
+							</div>
+							<div class="popular_text">
+								<div class="popular_text_content">
+									<h3>Au coeur de l'eau Chambres d'hôtes</h3>
+									<p>Nuit à partir de<strong>&nbsp;72&nbsp;&#128;</strong></p>
+								</div>
+								<div class="popular_text_rating">
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></P>	
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div class="popular_box">
+							<div class="popular_image">
+								<img src="images/ToutbleuetblancMedium.jpg" alt="Photo Hôtel Tout bleu et Blanc" />
+							</div>
+							<div class="popular_text">
+								<div class="popular_text_content">
+									<h3>Hôtel Tout bleu et Blanc</h3>
+									<p>Nuit à partir de<strong>&nbsp;68&nbsp;&#128;</strong></p>
+								</div>
+								<div class="popular_text_rating">
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></P>	
+								</div>
+							</div>
+						</div>
+					</a>
 				</div>
 			</aside>
 		</section>
 <!-- section 3 : activités -->
-		<section id="activites"> <!-- utiliser les flexbox ou CSS GRID -->
-			<div id="titre">
-				<h1>Activités à Marseille</h1> <!-- titre doit changer selon la ville recherchée dans la section/div recherche --><!-- 6 divisions  -->
+		<section id="activites">
+			<div id="activites_titre">
+				<h1>Activités à Marseille</h1>
 			</div>
-        	<div id="activites_grid"> <!-- à valider -->
+        	<div id="activites_grid">
         		<div id="activites_column_1">
 					<a href="#">
-						<div class="activites_box" id="activites_box_1"> <!-- transformer en bouton -->
- 			           		<div class="image" id="vieux_port_img">
+						<div class="activites_box" id="activites_box_1">
+ 			           		<div class="activites_image" id="vieux_port_img">
 								<img src="images/VieuxPortMedium.jpg" alt="Photo du Vieux Port" />
 							</div>
-							<div class="titre_activites">
+							<div class="activites_box_titre">
 								<h3>Vieux Port</h3>
 							</div>
     	    			</div>
@@ -177,20 +226,20 @@
 				<div id="activites_column_2">
 					<a href="#">
 						<div class="activites_box" id="activites_box_2">
-							<div class="image" id="pomegues_img">
+							<div class="activites_image" id="pomegues_img">
 								<img src="images/PomeguesMedium.jpg" alt="Photo du Fort de Pomègues" />
 							</div>
-							<div class="titre_activites">
+							<div class="activites_box_titre">
 								<h3>Fort de Pomègues</h3>
 							</div>
 						</div>
 					</a>
 					<a href="#">
 						<div class="activites_box" id="activites_box_3">
-							<div class="image" id="frioul_img">
+							<div class="activites_image" id="frioul_img">
 								<img src="images/FrioulMedium.jpg" alt="Photo des Îles de Frioul" />
 							</div>
-							<div class="titre_activites">
+							<div class="activites_box_titre">
 								<h3>Îles de Frioul</h3>
 							</div>
 						</div>
@@ -199,10 +248,10 @@
 				<div id="activites_column_3">
 					<a href="#">
 						<div class="activites_box" id="activites_box_4">
-							<div class="image" id="calanques_img">
+							<div class="activites_image" id="calanques_img">
 								<img src="images/CalanquesMedium.jpg" alt="Photo du Parc National des Calanques" />
 							</div>
-							<div class="titre_activites">
+							<div class="activites_box_titre">
 								<h3>Parc National des Calanques</h3>
 							</div>
 						</div>
@@ -211,20 +260,20 @@
 				<div id="activites_column_4">
 					<a href="#">
 						<div class="activites_box" id="activites_box_5">
-							<div class="image" id="la_garde_img">
+							<div class="activites_image" id="la_garde_img">
 								<img src="images/LaGardeMedium.jpg" alt="Photo de Notre-Dame-de-la-Garde" />
 							</div>
-							<div class="titre_activites">
+							<div class="activites_box_titre">
 								<h3>Notre-Dame-de-la-Garde</h3>
 							</div>
 						</div>
 					</a>
 					<a href="#">
 						<div class="activites_box" id="activites_box_6">
-							<div class="image" id="longchamp_img">
+							<div class="activites_image" id="longchamp_img">
 								<img src="images/LongchampMedium.jpg" alt="Photo du Parc Longchamp" />
 							</div>
-							<div class="titre_activites">
+							<div class="activites_box_titre">
 								<h3>Parc Longchamp</h3>
 							</div>
 						</div>
@@ -233,7 +282,6 @@
         	</div>        		
 		</section>
 <!-- pied de page -->
-<!-- ajouter les liens aux différentes parties + mise en forme CSS -->
 		<footer>
 <!-- a propos -->
 			<div id="a_propos">

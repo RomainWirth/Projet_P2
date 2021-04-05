@@ -14,6 +14,10 @@
 	background-color: hsl(249, 100%, 93%); /*couleur pour visualiser */
 }
 
+h1, h2, h3, h4, p, div, ul, ol { 
+	margin: 0; padding: 0; margin-block-start: 0; margin-block-end: 0;
+}
+
 h1, h2, h3 {
 	font-weight: bold;
 }
@@ -28,17 +32,13 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-}
-
-#logo {
-	margin-left: 3.5%;
+	margin: 0 3.5% 0 3.5%;
 }
 
 #navigation {
 	background-color: white;
 	display: flex;
 	justify-content: space-around;
-	margin-right: 3.5%;
 }
 
 nav ul {
@@ -53,7 +53,6 @@ nav li {
 	margin-left: 4.7%;
 }
 
-
 nav a {
 	color: black;
 	display: inline-block;
@@ -66,32 +65,35 @@ nav a:hover {
 	border-top: solid thin #0065FC;
 }
 
-#inscription {
+#inscription a {
 	font-weight: bold;
-	align-self: center;
 }
 
 /* SECTION PRESENTATION */
-#presentation {
-	background-color: green;
-}
-
 #recherche {
-	margin-left: 3.5%;
+	background-color: green;
+	margin: 0 3.5% 0 3.5%;
 }
 
-#recherche i {
-	display: inline-block;
-	font-size: 24px;
+#recherche_ville_contenu {
+	display: flex;
+}
+
+#marker {
 	background-color: #f2f2f2;
 	width: 50px;
 	height: 50px;
-	text-align: center;
 	border-radius: 12px 0 0 12px;
-	line-height: 41px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#destination {
+#marker i {
+	font-size: 24px;
+}
+
+#destination_critere {
 	height: 50px;
 	border: solid;
 	border-color: #f2f2f2;
@@ -108,14 +110,11 @@ nav a:hover {
 	border: 0;
 }
 
-#filtres {
-	background-color: grey;
+#recherche_filtres {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	margin-left: 3.5%;
-	line-height: 50px;
 }
 
 .button-2 {
@@ -128,9 +127,10 @@ nav a:hover {
 	margin-left: 1.7%;
 	text-align: center;
 	padding-right: 1.5%;
+	font-size: 20px;
 }
 
-#filtres i {
+#recherche_filtres i {
 	display: inline-block;
 	text-align: center;
 	font-size: 17px;
@@ -145,21 +145,23 @@ nav a:hover {
 	right: 2px;
 }
 
-#information {
-	margin-left: 3.5%;
+#recherche_information {
+	display: flex;
 }
 
-#information i {
-	display: inline-block;
-	text-align: center;
-	border: solid thin;
-	border-radius: 50%;
+#logo_i {
 	width: 24px;
 	height: 24px;
+	border: solid thin #dedede;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fa-info {
 	color: #0065fc;
-	border-color: #dedede;
 	font-size: 12px;
-	line-height: 24px;
 }
 
 /* SECTION HEBERGEMENTS */
@@ -171,6 +173,7 @@ nav a:hover {
 	margin: auto;
 }
 
+/* Article : div hotel_selectionnés */
 article {
 	height: 626px;
 	width: 61.1%;
@@ -183,9 +186,62 @@ article {
 	justify-content: space-around;
 }
 
+#hebergements_titre {
+	margin-left: 4.5%;
+}
+
+.hebergements_row {
+	margin-left: 4.5%;
+	margin-right: 4.5%;
+	width: 91%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.hebergements_row a {width: 29.5%;}
+
+.hebergements_box {
+    background: white;
+    height: 199px;
+	border: 5px solid white;
+    border-radius: 15px;
+    font-size: small;
+	position: relative;
+	overflow: hidden;
+}
+
+.hebergements_box_image {
+	position: absolute;
+	z-index: 1;
+	height: 114px;
+	width: 100%;
+	border-radius: 15px 15px 0 0;
+	display: flex;
+	align-items: center;
+}
+
+.hebergements_box_image img {width: 100%}
+
+.hebergements_box_text {
+	background: white;
+	position: absolute;
+	height: 75px;
+	width: 100%;
+	z-index: 2;
+	bottom: 0px;
+	padding: 5px;
+	text-align: left;
+}
+
+#afficher_plus {
+	margin-left: 4.5%;
+}
+
+/* ASIDE : DIV hôtels populaires */
 aside {
 	height: 626px;
-	width: 29.1%;
+	width: 29.16%;
 	margin-left: 1.5%;
 	margin-right: 1.5%;
 	border-radius: 15px;
@@ -193,94 +249,68 @@ aside {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	align-items: center;
 }
 
-/* Article : div hotel_selectionnés */
-#titre_hebergement {
-	margin-left: 4.5%;
-}
-
-#hotel_select_1 {
+#popular_titre {
+	margin: 0 9.5% 0 9.5%;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	margin-left: 1.5%;
-	margin-right: 1.5%;
-	margin-bottom: 30px;
-	line-height: 10px;
+	justify-content: space-between;
 }
-
-#hotel_select_2 {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	margin-left: 1.5%;
-	margin-right: 1.5%;
-	margin-bottom: 30px;
-	line-height: 10px;
-}
-
-.hebergements_box {
-    background: white;
-    height: 199px;
-    width: 28%;
-	border: 5px solid white;
-    border-radius: 15px;
-    text-align: left;
-    font-size: small;
-	background-position: center;
-	background-size: cover;
-}
-
-.hebergements_box img {
-	height: 114px;
-	width: 100%;
-	border-radius: 15px 15px 0 0;
-}
-
-.hebergements_box_text { padding: 5px;}
-
-#afficher_plus {
-	margin-left: 4.5%;
-}
-
-/* ASIDE : DIV hôtels populaires */
-#titre_popular {
-	align-self: flex-start;
-	margin-left: 38px;
-	display: flex;
-}
-
-#titre_popular i { align-self: center}
 
 #popular {
+	margin: 0 9.5% 0 9.5%;
 	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
+	flex-direction: column;
 	justify-content: space-around;
-	flex-wrap: wrap;
-	align-content: space-around;
 }
 
 .popular_box {
-    background: white;
+	position: relative;
 	height: 134px;
 	border: 5px solid white;
     border-radius: 15px;
     text-align: left;
     font-size: small;
-	width: 82%;
 	margin-bottom: 30px;
+	overflow: hidden;
+	display: flex;
+	justify-content: flex-start;
 }
 
-.popular_box img {
+.popular_image {
+	position: absolute;
+	z-index: 1;
 	height: 134px;
-	width: 127px;
+	width: 38.138%;
 	border-radius: 15px 0 0 15px;
-	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.popular_image img {height: 100%;}
+
+.popular_text {
+	background: white;
+	position: absolute;
+	z-index: 2;
+	right: 0px;
+	height: 134px;
+	width: 61.862%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.popular_text_content { 
+	margin: 10px;
+	display: flex; 
+	flex-direction: column; 
+	justify-content: space-around;
+}
+
+.popular_text_rating {
+	margin: 10px;
 }
 
 /* SECTION ACTIVITES */
@@ -288,7 +318,7 @@ aside {
 	height: 614px;
 }
 
-#activites h1 {
+#activites_titre {
 	margin-left: 3.5%;
 }
 
@@ -311,7 +341,7 @@ aside {
 
 #activites_box_1 {height: 445px;}
 
-.image {
+.activites_image {
 	position: absolute;
 	z-index: 1;
 	overflow: hidden;
@@ -323,7 +353,7 @@ aside {
 
 #vieux_port_img {height: 445px;}
 
-.titre_activites {
+.activites_box_titre {
 	position: absolute;
 	z-index: 2;
 	background-color: white;
@@ -393,3 +423,6 @@ footer ul { list-style-type: none; line-height: 30px;}
 
 /* RESPONSIVE DESIGN */
 
+@media screen {
+	
+}
