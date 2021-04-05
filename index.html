@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<link href="style.css" rel="stylesheet"></link> <!-- modifier le chemin fichier css si nécessaire -->
 	<link href="https://fonts.gstatic.com" rel="stylesheet"></link>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet"> <!-- source incorrecte -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
 	<title>Reservia</title>
 </head>
 
@@ -13,22 +13,19 @@
 	<div id="bloc_page"> <!-- largeur max 1440 px -->
 <!-- En-tête -->
 		<header>
-			<div id="logo">
-				<img src="images/Reservia.svg" alt="Logo de Reservia" /> <!-- réduire la taille du logo -->
+			<div id="logo_reservia">
+				<img src="images/Reservia.svg" alt="Logo de Reservia" />
 			</div>
 			<div id="navigation">
+				<a id="inscription" href="#">S'inscrire</a>
 				<nav>
 					<ul>
-						<li><a class="navigation" href="#hebergements">&nbsp;Hébergements&nbsp;</a></li> <!-- css : changer les couleurs des liens au survol et les mettre en référence + mise en page ligne à droite -->
-						<li><a class="navigation" href="#activites">&nbsp;Activités&nbsp;</a></li> <!-- css : changer les couleurs des liens au survol et les mettre en référence + mise en page ligne à droite -->
-					</ul> <!-- enlever la partie s'inscrire et la placer ailleurs -->
+						<li><a class="navigation" href="#hebergements">&nbsp;Hébergements&nbsp;</a></li>
+						<li><a class="navigation" href="#activites">&nbsp;Activités&nbsp;</a></li>
+					</ul>
 				</nav>
 			</div>
-			<div id="inscription">
-				<a href="#">S'inscrire</a>
-			</div>
 		</header>
-<!-- 3 parties principales : 3 sections différentes identifiées -->
 <!-- section 1 présentation générale -->
 		<section id="recherche">
 			<div id="recherche_texte">
@@ -43,13 +40,13 @@
 						</div>
 						<label for="Destination">
 							<input type="search" name="destination" id="destination_critere" placeholder="Destination" />
-						</label> <!-- placer le logo dans une div et mettre en forme -->
+						</label>
 						<input type="submit" value="Rechercher" class="button-1" />
 					</div>
 				</form>
 			</div>
-			<div id="recherche_filtres"> <!-- CSS : mettre en ligne cette div -->
-				<h2>Filtres</h2><!-- faire un tag a au lieu de input -->
+			<div id="recherche_filtres">
+				<h2>Filtres</h2>
 				<a href="#" class="button-2"><i class='fas fa-money-bill-wave'></i>&nbsp;Economique&nbsp;</a>
 				<a href="#" class="button-2"><i class='fas fa-child'></i>&nbsp;Familial&nbsp;</a>
 				<a href="#" class="button-2"><i class='fas fa-heart'></i>&nbsp;Romantique&nbsp;</a>
@@ -59,7 +56,7 @@
 				<div id="logo_i">
 					<span><i class='fas fa-info'></i></span>
 				</div>
-				<p>Plus de 500 logements sont disponibles dans cette ville</p> <!-- mettre en forme le logo avec un cercle autour -->
+				<p>Plus de 500 logements sont disponibles dans cette ville</p>
 			</div>
 		</section>
 <!-- section 2 les hébergements correspondant aux critères --> 
