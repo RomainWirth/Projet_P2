@@ -127,12 +127,21 @@ nav a:hover {
 	border: 0;
 }
 
+/* -------------------------------------- */
+/* ---------FILTRES DE RECHERCHE--------- */
+
 #recherche_filtres {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
 	align-items: center;
 	padding-top: 20px;
+}
+
+#recherche_filtres_boutons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: nowrap;
 }
 
 .button-2 {
@@ -143,7 +152,6 @@ nav a:hover {
 	border: 2px solid #deebff; 
 	border-radius: 27px;
 	margin-left: 1.7%;
-	text-align: center;
 	padding-right: 1.5%;
 	font-size: 20px;
 }
@@ -611,13 +619,17 @@ footer ul {list-style-type: none; line-height: 30px;}
 	#recherche_filtres {
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-start;
+		align-items: center;
 		flex-wrap: wrap;
 		padding-top: 20px;
 	}
 
+	#recherche_filtres_titre {
+		align-self: flex-start;
+	}
+
 	#recherche_filtres_boutons {
+		width: 50%;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
