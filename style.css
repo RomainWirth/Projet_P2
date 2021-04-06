@@ -1,4 +1,6 @@
-/* GENERAL */
+/* -------------------------------------- */
+/* ----------------GENERAL--------------- */
+/* -------------------------------------- */
 
 @font-face {
 	font-family: "Raleway";
@@ -11,7 +13,6 @@
 	max-width: 1440px;
 	margin: 0 auto;
 	font-family: "Raleway", sans-serif;
-	background-color: hsl(249, 100%, 93%); /*couleur pour visualiser */
 }
 
 h1, h2, h3, h4, p, div, ul, ol { 
@@ -28,24 +29,23 @@ a {
 	text-decoration-line: none;
 }
 
-/* HEADER */
+/* -------------------------------------- */
+/* ----------------HEADER---------------- */
+/* -------------------------------------- */
+
 header {
-	background-color: red;	
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 3.5% 0 3.5%;
 }
 
-
-
 #navigation {
-	background-color: white;
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: center;
 	flex-wrap: wrap;
-	width: 30.14%;
+	width: 40%;
 }
 
 nav ul {
@@ -76,9 +76,13 @@ nav a:hover {
 	line-height: 50px;
 }
 
-/* SECTION PRESENTATION */
+
+/* -------------------------------------- */
+/* -----------SECTION RECHERCHE---------- */
+/* -------------------------------------- */
+
+
 #recherche {
-	background-color: green;
 	margin: 0 3.5% 0 3.5%;
 }
 
@@ -180,16 +184,21 @@ nav a:hover {
 	font-size: 12px;
 }
 
-/* SECTION HEBERGEMENTS */
+/* -------------------------------------- */
+/* ---------SECTION HEBERGEMENTS--------- */
+/* -------------------------------------- */
+
 #hebergements {
-	background-color: grey;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	margin: auto;
 }
 
-/* Article : div hotel_selectionnés */
+/* -------------------------------------- */
+/* ---Article : div hotel_selectionnés--- */
+
+
 article {
 	height: 626px;
 	width: 61.1%;
@@ -263,7 +272,11 @@ article {
 	font-weight: bold;
 }
 
-/* ASIDE : DIV hôtels populaires */
+
+/* -------------------------------------- */
+/* -----ASIDE: DIV hôtels populaires----- */
+
+
 aside {
 	height: 626px;
 	width: 29.16%;
@@ -340,7 +353,12 @@ aside {
 	margin: 10px;
 }
 
-/* SECTION ACTIVITES */
+
+/* -------------------------------------- */
+/* ----------SECTION  ACTIVITES---------- */
+/* -------------------------------------- */
+
+
 #activites {
 	margin-top: 60px;
 	height: 614px;
@@ -351,7 +369,10 @@ aside {
 	margin: 0 3.5% 0 3.5%;
 }
 
-	/* CSS GRID */
+/* -------------------------------------- */
+/* ---------------CSS GRID--------------- */
+
+
 #activites_grid {
 	border: solid black;
 	margin: 0 3.5% 0 3.5%;
@@ -361,7 +382,9 @@ aside {
 	grid-gap: 3.28%;
 }
 
-	/* COLONNE 1 */
+/* -------------------------------------- */
+/* --------------COLONNE n1-------------- */
+
 #activites_column_1 {grid-column: 1 / span 1;}
 
 .activites_box {
@@ -393,7 +416,9 @@ aside {
 	border-radius: 0 0 15px 15px;
 }
 
-	/* COLONNE 2 */
+/* -------------------------------------- */
+/* --------------COLONNE n2-------------- */
+
 #activies_column_2 {grid-column: 2 / span 1;}
 
 #activites_box_2 {height: 236px; margin-bottom: 44px}
@@ -408,14 +433,18 @@ aside {
 
 #frioul_img img {width: 100%}
 
-	/* COLONNE 3 */
+/* -------------------------------------- */
+/* --------------COLONNE n3-------------- */
+
 #activies_column_3 {grid-column: 3 / span 1;}
 
 #activites_box_4 {height: 445px;}
 
 #calanques_img {height: 445px;}
 
-	/* COLONNE 4 */
+/* -------------------------------------- */
+/* --------------COLONNE n4-------------- */
+
 #activites_column_4 {grid-column: 4 / span 1;}
 
 #activites_box_5 {height: 194px; margin-bottom: 44px;}
@@ -428,20 +457,23 @@ aside {
 
 #longchamp_img {height: 207px; align-items: center;}
 
-#longchamp_img img { width: 100%}
+#longchamp_img img {width: 100%}
 
-/* formater les images pour qu'elle s'intègrent dans les grids */
 
-/* FOOTER */
+/* -------------------------------------- */
+/* ----------------FOOTER---------------- */
+/* -------------------------------------- */
+
 footer {
 	background-color: #F2F2F2;
 	text-align: top left;
 }
 
-footer ul { list-style-type: none; line-height: 30px;}
+footer ul {list-style-type: none; line-height: 30px;}
 
 #footer_grid {
 	margin: 0 3.5% 0 3.5%;
+	padding: 40px 0 40px 0;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 1fr;
@@ -454,9 +486,1022 @@ footer ul { list-style-type: none; line-height: 30px;}
 
 #assistance { grid-column: 3 / span 1; }
 
+/* ------------------------------------------------------------------------------------- */
+/* ----------------------------------RESPONSIVE DESIGN---------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/* --------------------------------Medium Screen Tablets-------------------------------- */
+/* ------------------------------------------------------------------------------------- */
 
-/* RESPONSIVE DESIGN */
+/* utiliser handheld au lieu de screen??? */
+@media screen and (min-width: 768px) and (max-width: 992px) {
 
-@media screen {
+	#blockpage {
+		background-color: blue
+	}
+
+	/* -------------------------------------- */
+	/* ----------------HEADER---------------- */
+	/* -------------------------------------- */
+
+	header {
+		background-color: red;	
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 3.5% 0 3.5%;
+	}
+
+	#navigation {
+		background-color: white;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		flex-wrap: wrap;
+		width: 40%;
+	}
+
+	nav ul {
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		line-height: 63px;
+		padding: 20px;
+	}
+
+	#navigation a {
+		display: inline-block;
+		margin-right: 10%;
+	}
+
+	nav a {
+		color: black;
+	}
+
+	nav a:hover {
+		color: #0065FC;
+		border-top: solid thin #0065FC;
+	}
+
+	#inscription {
+		font-weight: bold;
+		line-height: 50px;
+	}
+
+
+	/* -------------------------------------- */
+	/* -----------SECTION RECHERCHE---------- */
+	/* -------------------------------------- */
+
+
+	#recherche {
+		background-color: green;
+		margin: 0 3.5% 0 3.5%;
+	}
+
+	#recherche_texte {
+		line-height: 30px;
+		padding-top: 20px;
+	}
+
+	#recherche_ville {
+		display: flex;
+		justify-content: center;
+	}
+
+	#recherche_ville_contenu {
+		display: flex;
+		padding-top: 20px;
+	}
+
+	#marker {
+		background-color: #f2f2f2;
+		width: 50px;
+		height: 50px;
+		border-radius: 12px 0 0 12px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#marker i {
+		font-size: 24px;
+	}
+
+	#destination_critere {
+		height: 50px;
+		border: solid;
+		border-color: #f2f2f2;
+		text-align: left;
+	}
+
+	.button-1 {
+		background-color: #0065fc;
+		color: white;
+		height: 50px;
+		border-radius: 0 12px 12px 0;
+		position: relative;
+		right: 5px;
+		border: 0;
+	}
+
+	/* -------------------------------------- */
+	/* ---------FILTRES DE RECHERCHE--------- */
+
+	#recherche_filtres {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		padding-top: 20px;
+	}
+
+	#recherche_filtres_boutons {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.button-2 {
+		display: inline-block;
+		height: 50px;
+		background-color: white;
+		font-weight: bold;
+		border: 2px solid #deebff; 
+		border-radius: 27px;
+		margin-left: 1.7%;
+		text-align: center;
+		padding-right: 1.5%;
+		font-size: 20px;
+	}
+
+	#recherche_filtres i {
+		display: inline-block;
+		text-align: center;
+		font-size: 17px;
+		color: #0065fc;
+		background-color: #deebff;
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		border: 2x solid #deebff;
+		line-height: 50px;
+		position: relative;
+		right: 2px;
+	}
+
+	#recherche_information {
+		display: flex;
+		align-items: center;
+		padding: 20px 0 20px 0;
+	}
+
+	#logo_i {
+		width: 24px;
+		height: 24px;
+		border: solid thin #dedede;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.fa-info {
+		color: #0065fc;
+		font-size: 12px;
+	}
+
+
+	/* -------------------------------------- */
+	/* ---------SECTION HEBERGEMENTS--------- */
+	/* -------------------------------------- */
+
+
+	#hebergements {
+		background-color: grey;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+	}
+
+
+	/* -------------------------------------- */
+	/* ---Article : div hotel_selectionnés--- */
+
+
+	article {
+		height: 626px;
+		width: 100%;
+		margin-left: 1.5%;
+		margin-right: 1.5%;
+		border-radius: 15px; 
+		background-color: #F2F2F2;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	#hebergements_titre {
+		border: solid black;
+		margin: 0 4.5% 0 4.5%;
+		display: flex;
+		align-items: flex-end;
+	}
+
+	.hebergements_row {
+		border: solid black;
+		margin: 0 4.5% 0 4.5%;
+		width: 90.9091%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.hebergements_row a {width: 29.5%;}
+
+	.hebergements_box {
+		background: white;
+	    height: 199px;
+		border: 5px solid white;
+	    border-radius: 15px;
+	    font-size: small;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.hebergements_box_image {
+		position: absolute;
+		z-index: 1;
+		height: 114px;
+		width: 100%;
+		border-radius: 15px 15px 0 0;
+		display: flex;
+		align-items: center;
+	}
+
+	.hebergements_box_image img {width: 100%}
+
+	.hebergements_box_text {
+		background: white;
+		position: absolute;
+		height: 75px;
+		width: 100%;
+		z-index: 2;
+		bottom: 0px;
+		padding: 5px;
+		text-align: left;
+	}
+
+	#afficher_plus {
+		margin: 0 4.5% 0 4.5%;
+	}
+
+	#afficher_plus h2 {
+		border: solid black;
+		font-size: medium; 
+		font-weight: bold;
+	}
+
+
+	/* -------------------------------------- */
+	/* -----ASIDE: DIV hôtels populaires----- */
+
+
+	aside {
+		height: 400px;
+		width: 100%;
+		margin-left: 1.5%;
+		margin-right: 1.5%;
+		border-radius: 15px;
+		background-color: #F2F2F2;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
+
+	#popular_titre {
+		border: solid black;
+		margin: 0 4.5% 0 4.5%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#popular {
+		border: solid black;
+		margin: 0 4.5% 0 4.5%;
+		width: 90.9091%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	#popular a {width: 29.5%;}
+
+	.popular_box {
+		background: white;
+	    height: 199px;
+		border: 5px solid white;
+	    border-radius: 15px;
+	    font-size: small;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.popular_image {
+		position: absolute;
+		z-index: 1;
+		height: 114px;
+		width: 100%;
+		border-radius: 15px 15px 0 0;
+		display: flex;
+		align-items: center;
+	}
+
+	.popular_image img {width: 100%}
+
+	.popular_text {
+		background: white;
+		position: absolute;
+		height: 75px;
+		width: 100%;
+		z-index: 2;
+		bottom: 0px;
+		padding: 5px;
+		text-align: left;
+	}
+
+
+	/* -------------------------------------- */
+	/* ----------SECTION  ACTIVITES---------- */
+	/* -------------------------------------- */
+
+
+	#activites {
+		margin-top: 60px;
+		height: 1100px;
+	}
+
+	#activites_titre {
+		border: solid black;
+		margin: 0 3.5% 0 3.5%;
+	}
+
+
+	/* -------------------------------------- */
+	/* ---------------CSS GRID--------------- */
+
+
+	#activites_grid {
+		border: solid black;
+		margin: 0 3.5% 0 3.5%;
+		height: 900px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-gap: 3%;
+	}
+
+	/* -------------------------------------- */
+	/* --------------COLONNE n1-------------- */
+
+	#activites_column_1 {
+		grid-column: 1 / span 1;
+		grid-row: 1 / span 1;
+	}
+
+	.activites_box {
+		position: relative;
+		border-radius: 15px;
+	}
+
+	#activites_box_1 {height: 445px;}
+
+	.activites_image {
+		position: absolute;
+		z-index: 1;
+		overflow: hidden;
+		width: 100%;
+		border-radius: 15px;
+		display: flex;
+		justify-content: center;
+	}
+
+	#vieux_port_img {height: 445px;}
+
+	.activites_box_titre {
+		position: absolute;
+		z-index: 2;
+		background-color: white;
+		width: 100%;
+		height: 55px;
+		bottom: 0px;
+		border-radius: 0 0 15px 15px;
+	}
+
+
+	/* -------------------------------------- */
+	/* --------------COLONNE n2-------------- */
+
+	#activies_column_2 {
+		grid-column: 2 / span 1;
+		grid-row: 1 / span 1;
+	}
+
+	#activites_box_2 {height: 236px; margin-bottom: 44px}
+
+	#pomegues_img {height: 236px; align-items: center;}
+
+	#pomegues_img img {width: 100%}
+
+	#activites_box_3 {height: 165px;}
+
+	#frioul_img {height: 165px; align-items: center;}
+
+	#frioul_img img {width: 100%}
+
+	/* -------------------------------------- */
+	/* --------------COLONNE n3-------------- */
+	/* -Colonne 3 passe en colonne 1 ligne 2- */
+
+	#activies_column_3 {
+		grid-column: 1 / span 1;
+		grid-row: 2 / span 1;
+	}
+
+	#activites_box_4 {height: 445px;}
+
+	#calanques_img {height: 445px;}
+
+	/* -------------------------------------- */
+	/* --------------COLONNE n4-------------- */
+	/* -Colonne 3 passe en colonne 2 ligne 2- */
+
+	#activites_column_4 {
+		grid-column: 2 / span 1;
+		grid-row: 2 / span 1;
+	}
+
+	#activites_box_5 {height: 194px; margin-bottom: 44px;}
+
+	#la_garde_img {height: 194px; align-items: center;}
+
+	#la_garde_img img {width: 100%}
+
+	#activites_box_6 {height: 207px;}
+
+	#longchamp_img {height: 207px; align-items: center;}
+
+	#longchamp_img img {width: 100%}
+
+	/* formater les images pour qu'elle s'intègrent dans les grids */
+
+	/* -------------------------------------- */
+	/* ----------------FOOTER---------------- */
+	/* -------------------------------------- */
+
+	footer {
+		background-color: #F2F2F2;
+		text-align: top left;
+	}
+
+	footer ul {list-style-type: none; line-height: 30px;}
+
+	#footer_grid {
+		margin: 0 3.5% 0 3.5%;
+		padding: 40px 0 40px 0;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		grid-gap: 50px;
+	}
+
+	#a_propos {	
+		grid-column: 1; 
+		grid-row: 1 / span 1;
+	}
+
+	#nous_rejoindre { 
+		grid-column:  1; 
+		grid-row: 2 / span 1;
+	}
+
+	#assistance { 
+		grid-column: 1; 
+		grid-row: 3 / spann 1;
+	}	
+
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* ----------------------------------RESPONSIVE DESIGN---------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------Small Screen Smartphones------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 767px) {
+
+	#blockpage {
+		background-color: blue
+	}
 	
+	/* -------------------------------------- */
+	/* ----------------HEADER---------------- */
+	/* -------------------------------------- */
+	
+	header {
+		background-color: red;	
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 3.5% 0 3.5%;
+	}
+	
+	#navigation {
+		background-color: white;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		flex-wrap: wrap;
+		width: 40%;
+	}
+	
+	nav ul {
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		line-height: 63px;
+		padding: 20px;
+	}
+	
+	#navigation a {
+		display: inline-block;
+		margin-right: 10%;
+	}
+	
+	nav a {
+		color: black;
+	}
+	
+	nav a:hover {
+		color: #0065FC;
+		border-top: solid thin #0065FC;
+	}
+	
+	#inscription {
+		font-weight: bold;
+		line-height: 50px;
+	}
+	
+	
+	/* -------------------------------------- */
+	/* -----------SECTION RECHERCHE---------- */
+	/* -------------------------------------- */
+	
+	
+	#recherche {
+		background-color: green;
+		margin: 0 3.5% 0 3.5%;
+	}
+	
+	#recherche_texte {
+		line-height: 30px;
+		padding-top: 20px;
+	}
+	
+	#recherche_ville {
+		display: flex;
+		justify-content: center;
+	}
+	
+	#recherche_ville_contenu {
+		display: flex;
+		padding-top: 20px;
+	}
+	
+	#marker {
+		background-color: #f2f2f2;
+		width: 50px;
+		height: 50px;
+		border-radius: 12px 0 0 12px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#marker i {
+		font-size: 24px;
+	}
+	
+	#destination_critere {
+		height: 50px;
+		border: solid;
+		border-color: #f2f2f2;
+		text-align: left;
+	}
+	
+	.button-1 {
+		background-color: #0065fc;
+		color: white;
+		height: 50px;
+		border-radius: 0 12px 12px 0;
+		position: relative;
+		right: 5px;
+		border: 0;
+	}
+	
+	/* -------------------------------------- */
+	/* ---------FILTRES DE RECHERCHE--------- */
+	
+	#recherche_filtres {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		padding-top: 20px;
+	}
+	
+	#recherche_filtres_boutons {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	
+	.button-2 {
+		display: inline-block;
+		height: 50px;
+		background-color: white;
+		font-weight: bold;
+		border: 2px solid #deebff; 
+		border-radius: 27px;
+		margin-left: 1.7%;
+		text-align: center;
+		padding-right: 1.5%;
+		font-size: 20px;
+	}
+	
+	#recherche_filtres i {
+		display: inline-block;
+		text-align: center;
+		font-size: 17px;
+		color: #0065fc;
+		background-color: #deebff;
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		border: 2x solid #deebff;
+		line-height: 50px;
+		position: relative;
+		right: 2px;
+	}
+	
+	#recherche_information {
+		display: flex;
+		align-items: center;
+		padding: 20px 0 20px 0;
+	}
+	
+	#logo_i {
+		width: 24px;
+		height: 24px;
+		border: solid thin #dedede;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.fa-info {
+		color: #0065fc;
+		font-size: 12px;
+	}
+	
+	
+	/* -------------------------------------- */
+	/* ---------SECTION HEBERGEMENTS--------- */
+	/* -------------------------------------- */
+	
+	
+	#hebergements {
+		background-color: grey;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+	}
+	
+	
+	/* -------------------------------------- */
+	/* ---Article : div hotel_selectionnés--- */
+	
+	
+	article {
+		height: 626px;
+		width: 100%;
+		margin-left: 1.5%;
+		margin-right: 1.5%;
+		border-radius: 15px; 
+		background-color: #F2F2F2;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	
+	#hebergements_titre {
+		border: solid black;
+		margin: 0 4.5% 0 4.5%;
+		display: flex;
+		align-items: flex-end;
+	}
+	
+	.hebergements_row {
+		border: solid black;
+		margin: 0 4.5% 0 4.5%;
+		width: 90.9091%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	.hebergements_row a {width: 29.5%;}
+	
+	.hebergements_box {
+		background: white;
+		height: 199px;
+		border: 5px solid white;
+		border-radius: 15px;
+		font-size: small;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	.hebergements_box_image {
+		position: absolute;
+		z-index: 1;
+		height: 114px;
+		width: 100%;
+		border-radius: 15px 15px 0 0;
+		display: flex;
+		align-items: center;
+	}
+	
+	.hebergements_box_image img {width: 100%}
+	
+	.hebergements_box_text {
+		background: white;
+		position: absolute;
+		height: 75px;
+		width: 100%;
+		z-index: 2;
+		bottom: 0px;
+		padding: 5px;
+		text-align: left;
+	}
+	
+	#afficher_plus {
+		margin: 0 4.5% 0 4.5%;
+	}
+	
+	#afficher_plus h2 {
+		border: solid black;
+		font-size: medium; 
+		font-weight: bold;
+	}
+	
+	
+	/* -------------------------------------- */
+	/* -----ASIDE: DIV hôtels populaires----- */
+	
+	
+	aside {
+		height: 400px;
+		width: 100%;
+		margin-left: 1.5%;
+		margin-right: 1.5%;
+		border-radius: 15px;
+		background-color: #F2F2F2;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
+	
+	#popular_titre {
+		border: solid black;
+		margin: 0 4.5% 0 4.5%;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	#popular {
+		border: solid black;
+		margin: 0 4.5% 0 4.5%;
+		width: 90.9091%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	#popular a {width: 29.5%;}
+	
+	.popular_box {
+		background: white;
+		height: 199px;
+		border: 5px solid white;
+		border-radius: 15px;
+		font-size: small;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	.popular_image {
+		position: absolute;
+		z-index: 1;
+		height: 114px;
+		width: 100%;
+		border-radius: 15px 15px 0 0;
+		display: flex;
+		align-items: center;
+	}
+	
+	.popular_image img {width: 100%}
+	
+	.popular_text {
+		background: white;
+		position: absolute;
+		height: 75px;
+		width: 100%;
+		z-index: 2;
+		bottom: 0px;
+		padding: 5px;
+		text-align: left;
+	}
+	
+	
+	/* -------------------------------------- */
+	/* ----------SECTION  ACTIVITES---------- */
+	/* -------------------------------------- */
+	
+	
+	#activites {
+		margin-top: 60px;
+		height: 1100px;
+	}
+	
+	#activites_titre {
+		border: solid black;
+		margin: 0 3.5% 0 3.5%;
+	}
+	
+	
+	/* -------------------------------------- */
+	/* ---------------CSS GRID--------------- */
+	
+	
+	#activites_grid {
+		border: solid black;
+		margin: 0 3.5% 0 3.5%;
+		height: 900px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-gap: 3%;
+	}
+	
+	/* -------------------------------------- */
+	/* --------------COLONNE n1-------------- */
+	
+	#activites_column_1 {
+		grid-column: 1 / span 1;
+		grid-row: 1 / span 1;
+	}
+	
+	.activites_box {
+		position: relative;
+		border-radius: 15px;
+	}
+	
+	#activites_box_1 {height: 445px;}
+	
+	.activites_image {
+		position: absolute;
+		z-index: 1;
+		overflow: hidden;
+		width: 100%;
+		border-radius: 15px;
+		display: flex;
+		justify-content: center;
+	}
+	
+	#vieux_port_img {height: 445px;}
+	
+	.activites_box_titre {
+		position: absolute;
+		z-index: 2;
+		background-color: white;
+		width: 100%;
+		height: 55px;
+		bottom: 0px;
+		border-radius: 0 0 15px 15px;
+	}
+	
+	
+	/* -------------------------------------- */
+	/* --------------COLONNE n2-------------- */
+	
+	#activies_column_2 {
+		grid-column: 2 / span 1;
+		grid-row: 1 / span 1;
+	}
+	
+	#activites_box_2 {height: 236px; margin-bottom: 44px}
+	
+	#pomegues_img {height: 236px; align-items: center;}
+	
+	#pomegues_img img {width: 100%}
+	
+	#activites_box_3 {height: 165px;}
+	
+	#frioul_img {height: 165px; align-items: center;}
+	
+	#frioul_img img {width: 100%}
+	
+	/* -------------------------------------- */
+	/* --------------COLONNE n3-------------- */
+	/* -Colonne 3 passe en colonne 1 ligne 2- */
+	
+	#activies_column_3 {
+		grid-column: 1 / span 1;
+		grid-row: 2 / span 1;
+	}
+	
+	#activites_box_4 {height: 445px;}
+	
+	#calanques_img {height: 445px;}
+	
+	/* -------------------------------------- */
+	/* --------------COLONNE n4-------------- */
+	/* -Colonne 3 passe en colonne 2 ligne 2- */
+	
+	#activites_column_4 {
+		grid-column: 2 / span 1;
+		grid-row: 2 / span 1;
+	}
+	
+	#activites_box_5 {height: 194px; margin-bottom: 44px;}
+	
+	#la_garde_img {height: 194px; align-items: center;}
+	
+	#la_garde_img img {width: 100%}
+	
+	#activites_box_6 {height: 207px;}
+	
+	#longchamp_img {height: 207px; align-items: center;}
+	
+	#longchamp_img img {width: 100%}
+	
+	/* formater les images pour qu'elle s'intègrent dans les grids */
+	
+	/* -------------------------------------- */
+	/* ----------------FOOTER---------------- */
+	/* -------------------------------------- */
+	
+	footer {
+		background-color: #F2F2F2;
+		text-align: top left;
+	}
+	
+	footer ul {list-style-type: none; line-height: 30px;}
+	
+	#footer_grid {
+		margin: 0 3.5% 0 3.5%;
+		padding: 40px 0 40px 0;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		grid-gap: 50px;
+	}
+	
+	#a_propos {	
+		grid-column: 1; 
+		grid-row: 1 / span 1;
+	}
+	
+	#nous_rejoindre { 
+		grid-column:  1; 
+		grid-row: 2 / span 1;
+	}
+	
+	#assistance { 
+		grid-column: 1; 
+		grid-row: 3 / spann 1;
+	}	
+
 }
