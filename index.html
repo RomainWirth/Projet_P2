@@ -35,13 +35,13 @@
 			<div id="recherche_ville">
 				<form method="post" action="traitement.php"> <!-- pas de page PHP pour le traitement des données -->
 					<div id="recherche_ville_contenu">
-						<div id="marker">
+						<div id="map_marker">
 							<i style='font-size: auto' class="fas fa-map-marker-alt"></i>
 						</div>
 						<label for="Destination">
 							<input type="search" name="destination" id="destination_critere" placeholder="Destination" />
 						</label>
-						<input type="submit" value="Rechercher" class="button-1" />
+						<input type="submit" value="&nbsp;Rechercher&nbsp;" class="button-1" />
 					</div>
 				</form>
 			</div>
@@ -50,10 +50,29 @@
 					<h2>Filtres</h2>
 				</div>
 				<div id="recherche_filtres_boutons">
-					<a href="#" class="button-2"><i class='fas fa-money-bill-wave'></i>&nbsp;Economique&nbsp;</a>
-					<a href="#" class="button-2"><i class='fas fa-child'></i>&nbsp;Familial&nbsp;</a>
-					<a href="#" class="button-2"><i class='fas fa-heart'></i>&nbsp;Romantique&nbsp;</a>
-					<a href="#" class="button-2"><i class='fas fa-dog'></i>&nbsp;Animaux&nbsp;Autorisés&nbsp;</a>
+					<a href="#">
+						<div class="button-2">
+							<i class='fas fa-money-bill-wave'></i>
+							<p>&nbsp;Economique&nbsp;</p>
+						</div>
+					</a>
+					<a href="#">
+						<div class="button-2">
+							<i class='fas fa-child'></i>
+							<p>&nbsp;Familial&nbsp;</p>
+						</div>
+					</a>
+					<a href="#">
+						<div class="button-2">
+							<i class='fas fa-heart'></i>
+							<p>&nbsp;Romantique&nbsp;</p>		
+						</div>
+					</a>
+					<a href="#">
+						<div class="button-2">
+							<i class='fas fa-dog'></i><p>&nbsp;Animaux&nbsp;Autorisés&nbsp;</p>				
+						</div>
+					</a>
 				</div>
 			</div>
 			<div id="recherche_information">
