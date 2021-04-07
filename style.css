@@ -49,7 +49,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	width: 40%;
+	width: 33%;
 }
 
 nav {
@@ -522,7 +522,7 @@ footer ul {list-style-type: none; line-height: 30px;}
 /* ------------------------------------------------------------------------------------- */
 
 /* utiliser handheld au lieu de screen??? */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media handheld and (min-width: 768px) and (max-width: 991px) {
 
 	#blockpage {
 		background-color: blue
@@ -1026,7 +1026,7 @@ footer ul {list-style-type: none; line-height: 30px;}
 /* ------------------------------------------------------------------------------------- */
 
 
-@media screen and (max-width: 767px) {
+@media handheld and (max-width: 767px) {
 
 	#blockpage {
 		max-width: 767px;;
@@ -1396,7 +1396,7 @@ footer ul {list-style-type: none; line-height: 30px;}
 		margin: 0 5% 0 5%;
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(6, 190px;);
+		grid-template-rows: repeat(6, 190px);
 		grid-gap: 24px;
 	}
 	
