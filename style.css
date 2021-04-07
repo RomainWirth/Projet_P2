@@ -150,11 +150,16 @@ nav a:hover {
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: nowrap;
+	margin-left: 1.7%;
+}
+
+#recherche_filtres_boutons a {
+	display: inline-block;
+	margin-left: 1.7%;
 }
 
 .button-2 {
 	height: 48px;
-	width: auto;
 	background-color: white;
 	border: 2px solid #f2f2f2; 
 	border-radius: 27px;
@@ -166,6 +171,8 @@ nav a:hover {
 	align-items: center;
 	flex-wrap: nowrap;
 }
+
+#button-2.1 {width: 250px;}
 
 #recherche_filtres_boutons i {
 	display: inline-block;
@@ -181,6 +188,9 @@ nav a:hover {
 	position: relative;
 	right: 2px;
 }
+
+/* -------------------------------------- */
+/* ------------RECHERCHE INFO------------ */
 
 #recherche_information {
 	display: flex;
