@@ -11,7 +11,8 @@
 
 <body>
 	<div id="bloc_page"> <!-- largeur max 1440 px -->
-<!-- En-tête -->
+<!-- ------------------------------------------------------------------- -->
+<!-- ------------------------------En-tête------------------------------ -->
 		<header>
 			<div id="logo_reservia">
 				<img src="images/Reservia.svg" alt="Logo de Reservia" />
@@ -26,12 +27,18 @@
 				</nav>
 			</div>
 		</header>
-<!-- section 1 recherche -->
+
+<!-- ------------------------------------------------------------------- -->
+<!-- ------------------------section 1 recherche------------------------ -->
 		<section id="recherche">
+
+	<!-- titre -->
 			<div id="recherche_texte">
 				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 				<p>En plein centre ville ou en pleine nature</p>
 			</div>
+
+	<!-- champ de recherche -->
 			<div id="recherche_ville">
 				<form method="post" action="traitement.php"> <!-- pas de page PHP pour le traitement des données -->
 					<div id="recherche_ville_contenu">
@@ -45,23 +52,25 @@
 					</div>
 				</form>
 			</div>
+
+	<!-- filtres de recherche-->
 			<div id="recherche_filtres">
 				<div id="recherche_filtres_titre">
 					<h2>Filtres</h2>
 				</div>
 				<div id="recherche_filtres_boutons">
-					<a href="#">
-						<div class="button-2" id="button-2.1">
+					<a href="#" id="button-2_1">
+						<div class="button-2">
 							<div class="button-2_marker">
 								<i class='fas fa-money-bill-wave'></i>
 							</div>
-							<div>
+							<div class="button-2_text">
 								<p>&nbsp;Economique&nbsp;</p>
 							</div>
 						</div>
 					</a>
-					<a href="#">
-						<div class="button-2" id="button-2.2">
+					<a href="#" id="button-2_2">
+						<div class="button-2">
 							<div class="button-2_marker">
 								<i class='fas fa-child'></i>
 							</div>
@@ -70,8 +79,8 @@
 							</div>
 						</div>
 					</a>
-					<a href="#">
-						<div class="button-2" id="button-2.3">
+					<a href="#" id="button-2_3">
+						<div class="button-2">
 							<div class="button-2_marker">
 								<i class='fas fa-heart'></i>
 							</div>
@@ -80,8 +89,8 @@
 							</div>
 						</div>
 					</a>
-					<a href="#">
-						<div class="button-2" id="button-2.4">
+					<a href="#" id="button-2_4">
+						<div class="button-2">
 							<div class="button-2_marker">
 								<i class='fas fa-dog'></i>
 							</div>
@@ -92,6 +101,8 @@
 					</a>
 				</div>
 			</div>
+
+	<!-- paragraphe information -->
 			<div id="recherche_information">
 				<div id="logo_i">
 					<span><i class='fas fa-info'></i></span>
@@ -99,12 +110,19 @@
 				<p>&nbsp;Plus de 500 logements sont disponibles dans cette ville</p>
 			</div>
 		</section>
-<!-- section 2 les hébergements correspondant aux critères --> 
+
+<!-- ------------------------------------------------------------------- -->
+<!-- ----------------------section 2 : hebergement---------------------- -->
 		<section id="hebergements">
+
+	<!-- article : hébergements sélectionnés -->
+		<!-- titre-->
 			<article>
 				<div id="hebergements_titre">
 					<h1>Hébergements à Marseille</h1>
 				</div>
+
+		<!-- 1ère rangée -->
 				<div class="hebergements_row">
 					<a href="#">
 						<div class="hebergements_box">
@@ -143,6 +161,8 @@
 						</div>
 					</a>
 				</div>
+
+		<!-- 2ème rangée -->
 				<div class="hebergements_row">
 					<a href="#">
 						<div class="hebergements_box">
@@ -181,15 +201,23 @@
 						</div>	
 					</a> 	
    	    		</div>
+
+		<!-- afficher plus -->
         		<div id="afficher_plus">
 					<h2><a href="more_hotels">Afficher plus</a></h2></p>
 				</div>
 			</article>
+
+	<!-- article : hébergements populaires -->
 			<aside>
+
+		<!-- titre -->
 				<div id="popular_titre">
 					<h1>Les plus populaires</h1>
 					<p><i style='font-size:24px' class='fas'>&#xf201;</i></p>
 				</div>
+		
+		<!-- hotels populaires -->
         	    <div id="popular">
 					<a href="#">
 						<div class="popular_box">
@@ -242,7 +270,9 @@
 				</div>
 			</aside>
 		</section>
-<!-- section 3 : activités -->
+
+<!-- ------------------------------------------------------------------- -->
+<!-- -----------------------section 3 : activités----------------------- -->
 		<section id="activites">
 			<div id="activites_titre">
 				<h1>Activités à Marseille</h1>
@@ -318,9 +348,13 @@
 				</div>
         	</div>        		
 		</section>
-<!-- pied de page -->
+
+<!-- ------------------------------------------------------------------- -->
+<!-- -------------------------------footer------------------------------ -->
+<!-- ------------------------------------------------------------------- -->
+
 		<footer>
-<!-- a propos -->
+	<!-- a propos -->
 			<div id="footer_grid">
 				<div id="a_propos">
 					<ul>
