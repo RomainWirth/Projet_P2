@@ -602,6 +602,11 @@ footer ul {list-style-type: none; line-height: 30px;}
 	
 	/* champ de recherche */
 
+	#recherche_ville {
+		display: flex;
+		justify-content: center;
+	}
+
 	#recherche_ville_contenu {
 		display: flex;
 		padding-top: 20px;
