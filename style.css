@@ -10,8 +10,7 @@
 }
 
 #bloc_page {
-	min-width: 992px;
-	max-width: 1440px;
+	width: 1440px;
 	margin: 0 auto;
 	font-family: "Raleway", sans-serif;
 }
@@ -30,6 +29,7 @@ h2 {font-size: 18px;}
 
 a {
 	text-decoration-line: none;
+	color: black;
 }
 
 /* -------------------------------------- */
@@ -40,7 +40,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0 3.5% 0 3.5%;
+	margin: 20px 3.5% 20px 3.5%;
 }
 
 #navigation {
@@ -48,8 +48,8 @@ header {
 	flex-direction: row-reverse;
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;
-	width: 33%;
+	flex-wrap: nowrap;
+	width: 32.6%;
 }
 
 nav {
@@ -58,12 +58,11 @@ nav {
 
 nav ul {
 	list-style-type: none;
-	width: 300px;
+	width: 324px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	line-height: 63px;
-	padding: 20px 0 20px 0;
 }
 
 #navigation a {
@@ -83,6 +82,11 @@ nav a:hover {
 #inscription {
 	font-weight: bold;
 	line-height: 50px;
+	color: #0065fc;
+}
+
+#inscription:hover{
+	color: grey;
 }
 
 
@@ -137,6 +141,10 @@ nav a:hover {
 	padding: 0 20px 0 20px;
 }
 
+.button-1:hover {
+	background-color: #deebff;
+}
+
 /* -------------------------------------- */
 /* ---------FILTRES DE RECHERCHE--------- */
 
@@ -179,6 +187,10 @@ nav a:hover {
 	display: flex;
 	align-items: center;
 	flex-wrap: nowrap;
+}
+
+.button-2:hover {
+	background-color: #deebff
 }
 
 #recherche_filtres_boutons i {
@@ -231,6 +243,14 @@ nav a:hover {
 	margin: auto;
 }
 
+.fa-star {
+	color: #0065fc;
+}
+
+.etoile-grise {
+	color: #dedede;
+}
+
 /* -------------------------------------- */
 /* ---Article : div hotel_selectionnés--- */
 
@@ -244,11 +264,11 @@ article {
 	background-color: #F2F2F2;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 #hebergements_titre {
-	margin: 0 4.5% 0 4.5%;
+	margin: 15px 4.5% 0 4.5%;
 	display: flex;
 	align-items: flex-end;
 }
@@ -264,13 +284,18 @@ article {
 .hebergements_row a {width: 29.5%;}
 
 .hebergements_box {
-    background: white;
+    background-color: white;
     height: 199px;
 	border: 5px solid white;
     border-radius: 15px;
     font-size: small;
 	position: relative;
 	overflow: hidden;
+	box-shadow: 0 0 10px #e8e8e8;
+}
+
+.hebergements_box:hover {
+	box-shadow: 0 0 15px grey;
 }
 
 .hebergements_box_image {
@@ -279,30 +304,38 @@ article {
 	height: 114px;
 	width: 100%;
 	border-radius: 15px 15px 0 0;
+	border-color: 5px solid white;
 	display: flex;
 	align-items: center;
 }
 
-.hebergements_box_image img {width: 100%}
+.hebergements_box_image img {width: 100%;}
 
 .hebergements_box_text {
-	background: white;
+	background-color: white;
 	position: absolute;
 	height: 75px;
 	width: 100%;
 	z-index: 2;
 	bottom: 0px;
-	padding: 5px;
+	padding: 5px 5px 5px 10px;
 	text-align: left;
+	display: flex; 
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 #afficher_plus {
-	margin: 0 4.5% 0 4.5%;
+	margin: 0 4.5% 40px 4.5%;
 }
 
 #afficher_plus h2 {
 	font-size: medium; 
 	font-weight: bold;
+}
+
+#afficher_plus_a:hover {
+	color: #0065fc;
 }
 
 
@@ -326,6 +359,7 @@ aside {
 	margin: 0 9.5% 0 9.5%;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 #popular {
@@ -346,6 +380,11 @@ aside {
 	overflow: hidden;
 	display: flex;
 	justify-content: flex-start;
+	box-shadow: 0 0 10px #e8e8e8;
+}
+
+.popular_box:hover{
+	box-shadow: 0 0 15px grey;
 }
 
 .popular_image {
@@ -375,13 +414,16 @@ aside {
 
 .popular_text_content { 
 	margin: 10px;
+	padding: 10px;
+	line-height: 20px;
 	display: flex; 
 	flex-direction: column; 
 	justify-content: space-around;
 }
 
 .popular_text_rating {
-	margin: 10px;
+	margin: 0 10px 0 10px;
+	padding: 10px;
 }
 
 
@@ -397,6 +439,39 @@ aside {
 
 #activites_titre {
 	margin: 0 3.5% 0 3.5%;
+}
+
+.activites_box {
+	position: relative;
+	border-radius: 15px;
+	box-shadow: 0 0 10px #e8e8e8;
+}
+
+.activites_box:hover {
+	box-shadow: 0 0 15px grey;
+}
+
+.activites_image {
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+	width: 100%;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+}
+
+.activites_box_titre {
+	position: absolute;
+	z-index: 2;
+	background-color: white;
+	width: 100%;
+	height: 55px;
+	bottom: 0px;
+	border-radius: 0 0 15px 15px;
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
 }
 
 /* -------------------------------------- */
@@ -416,34 +491,9 @@ aside {
 
 #activites_column_1 {grid-column: 1 / span 1;}
 
-.activites_box {
-	position: relative;
-	border-radius: 15px;
-}
-
 #activites_box_1 {height: 445px;}
 
-.activites_image {
-	position: absolute;
-	z-index: 1;
-	overflow: hidden;
-	width: 100%;
-	border-radius: 15px;
-	display: flex;
-	justify-content: center;
-}
-
-#vieux_port_img {height: 445px;}
-
-.activites_box_titre {
-	position: absolute;
-	z-index: 2;
-	background-color: white;
-	width: 100%;
-	height: 55px;
-	bottom: 0px;
-	border-radius: 0 0 15px 15px;
-}
+#vieux_port_img {height: 430px;}
 
 /* -------------------------------------- */
 /* --------------COLONNE n2-------------- */
@@ -452,7 +502,7 @@ aside {
 
 #activites_box_2 {height: 236px; margin-bottom: 44px}
 
-#pomegues_img {height: 236px; align-items: center;}
+#pomegues_img {height: 225px; align-items: center;}
 
 #pomegues_img img {width: 100%}
 
@@ -509,6 +559,8 @@ footer ul {list-style-type: none; line-height: 30px;}
 	grid-gap: 50px;
 }
 
+footer a:hover{color: #0065fc}
+
 #a_propos {	grid-column: 1 / span 1; }
 
 #nous_rejoindre { grid-column: 2 / span 1; }
@@ -521,11 +573,10 @@ footer ul {list-style-type: none; line-height: 30px;}
 /* --------------------------------Medium Screen Tablets-------------------------------- */
 /* ------------------------------------------------------------------------------------- */
 
-/* utiliser handheld au lieu de screen??? */
-@media handheld and (min-width: 768px) and (max-width: 991px) {
+@media all and (min-device-width: 768px) and (max-device-width: 991px) {
 
 	#blockpage {
-		background-color: blue
+		width: auto;
 	}
 
 	/* -------------------------------------- */
@@ -538,6 +589,12 @@ footer ul {list-style-type: none; line-height: 30px;}
 		align-items: center;
 		margin: 0 3.5% 0 3.5%;
 	}
+
+	#logo_reservia img {
+		width: 120%;
+	}
+
+	header a {font-size: 25px;}
 
 	#navigation {
 		display: flex;
@@ -709,7 +766,6 @@ footer ul {list-style-type: none; line-height: 30px;}
 
 
 	#hebergements {
-		background-color: grey;
 		display: flex;
 		flex-direction: column-reverse;
 		justify-content: center;
@@ -727,8 +783,6 @@ footer ul {list-style-type: none; line-height: 30px;}
 		width: 100%;
 		margin-left: 1.5%;
 		margin-right: 1.5%;
-		border-radius: 15px; 
-		background-color: #F2F2F2;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -1026,10 +1080,10 @@ footer ul {list-style-type: none; line-height: 30px;}
 /* ------------------------------------------------------------------------------------- */
 
 
-@media handheld and (max-width: 767px) {
+@media all and (max-device-width: 767px) {
 
 	#blockpage {
-		max-width: 767px;;
+		width: auto;
 	}
 	
 	/* -------------------------------------- */
@@ -1046,8 +1100,7 @@ footer ul {list-style-type: none; line-height: 30px;}
 	}
 	
 	#logo_reservia {
-		position: absolute;
-		width: 100%;
+		position: static;
 		align-self: flex-start;
 	}
 
@@ -1224,7 +1277,6 @@ footer ul {list-style-type: none; line-height: 30px;}
 	
 	
 	#hebergements {
-		background-color: grey;
 		display: flex;
 		flex-direction: column-reverse;
 		justify-content: center;
@@ -1311,11 +1363,8 @@ footer ul {list-style-type: none; line-height: 30px;}
 	
 	
 	aside {
-		height: 400px;
+		height: 580px;
 		width: 100%;
-		margin-left: 1.5%;
-		margin-right: 1.5%;
-		border-radius: 15px;
 		background-color: #F2F2F2;
 		display: flex;
 		flex-direction: column;
@@ -1333,7 +1382,7 @@ footer ul {list-style-type: none; line-height: 30px;}
 		margin: 0 4.5% 0 4.5%;
 		width: 90.9091%;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: space-between;
 	}
 	
@@ -1341,7 +1390,7 @@ footer ul {list-style-type: none; line-height: 30px;}
 	
 	.popular_box {
 		background: white;
-		height: 199px;
+		height: 134px;
 		border: 5px solid white;
 		border-radius: 15px;
 		font-size: small;
@@ -1352,22 +1401,22 @@ footer ul {list-style-type: none; line-height: 30px;}
 	.popular_image {
 		position: absolute;
 		z-index: 1;
-		height: 114px;
-		width: 100%;
+		height: 134px;
+		width: 40%;
 		border-radius: 15px 15px 0 0;
 		display: flex;
 		align-items: center;
 	}
 	
-	.popular_image img {width: 100%}
+	.popular_image img {height: 100%}
 	
 	.popular_text {
 		background: white;
 		position: absolute;
-		height: 75px;
-		width: 100%;
+		height: 100%;
+		width: 60%;
 		z-index: 2;
-		bottom: 0px;
+		right: 0px;
 		padding: 5px;
 		text-align: left;
 	}
