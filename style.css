@@ -10,7 +10,8 @@
 }
 
 #bloc_page {
-	width: 1440px;
+	min-width: 992px;
+	max-width: 1440px;
 	margin: 0 auto;
 	font-family: "Raleway", sans-serif;
 }
@@ -152,12 +153,27 @@ nav a:hover {
 	background-color: #004dfc;
 }
 
+#button-1-bis {
+	display: none;
+	background-color: #0065fc;
+	color: white;
+	height: 75px;
+	width: 201px;
+	border-radius: 0 12px 12px 0;
+	position: relative;
+	right: 5px;
+	border: 0;
+	padding: 0 20px 0 20px;
+	font-size: 24px;
+}
+
 /* -------------------------------------- */
 /* ---------FILTRES DE RECHERCHE--------- */
 
 #recherche_filtres {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	padding-top: 20px;
 }
 
@@ -167,8 +183,19 @@ nav a:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	flex-wrap: nowrap;
-	width: 100%;
+	flex-wrap: wrap;
+	width: 65%;
+}
+
+#boutons_groupe_1 {width: 45%;}
+
+#boutons_groupe_2 {width: 55%;}
+
+.boutons_groupe {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 0px;
 }
 
 #recherche_filtres_boutons a {
@@ -176,16 +203,17 @@ nav a:hover {
 	margin-right: 1.7%;
 }
 
-#button-2_1 {width: 190px;}
+#button-2_1 {width: 195px;}
 
-#button-2_2 {width: 148px;}
+#button-2_2 {width: 153px;}
 
-#button-2_3 {width: 180px;}
+#button-2_3 {width: 185px;}
 
-#button-2_4 {width: 238px;}
+#button-2_4 {width: 243px;}
 
 .button-2 {
 	height: 48px;
+	margin-right: 1.7%;
 	background-color: white;
 	border: 2px solid #f2f2f2; 
 	border-radius: 27px;
@@ -632,14 +660,14 @@ footer a:hover{color: #0065fc}
 		flex-direction: row-reverse;
 		align-items: center;
 		flex-wrap: wrap;
-		width: 65%;
+		width: 67%;
 	}
 
 	nav ul {
 		list-style-type: none;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-around;
 		line-height: 63px;
 	}
 
@@ -730,6 +758,20 @@ footer a:hover{color: #0065fc}
 		font-size: 24px;
 	}
 	
+	#button-1-bis {
+		display: none;
+		background-color: #0065fc;
+		color: white;
+		height: 75px;
+		width: 201px;
+		border-radius: 0 12px 12px 0;
+		position: relative;
+		right: 5px;
+		border: 0;
+		padding: 0 20px 0 20px;
+		font-size: 24px;
+	}
+
 	/* -------------------------------------- */
 	/* ---------FILTRES DE RECHERCHE--------- */
 	
@@ -748,12 +790,23 @@ footer a:hover{color: #0065fc}
 	#recherche_filtres_boutons {
 		padding-top: 20px;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		width: 100%;
 	}
 	
+	#boutons_groupe_1 {width: 100%;}
+
+	#boutons_groupe_2 {width: 100%;}
+
+	.boutons_groupe {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
 	#recherche_filtres_boutons a {
 		display: inline-block;
 		margin-right: 1.7%;
@@ -782,6 +835,8 @@ footer a:hover{color: #0065fc}
 	#button-2_marker {
 		display: flex; 
 		justify-content: center;
+		align-items: center;
+		padding: auto;
 	}
 
 	#recherche_filtres_boutons i {
@@ -844,6 +899,7 @@ footer a:hover{color: #0065fc}
 		width: 100%;
 		margin-left: 1.5%;
 		margin-right: 1.5%;
+		background-color: white;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -917,6 +973,7 @@ footer a:hover{color: #0065fc}
 		height: 400px;
 		width: 100%;
 		background-color: #F2F2F2;
+		border-radius: 0px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -924,7 +981,7 @@ footer a:hover{color: #0065fc}
 	}
 
 	#popular_titre {
-		width: 30%;
+		width: 50%;
 		margin: 0 4.5% 0 4.5%;
 		display: flex;
 		justify-content: space-between;
@@ -962,7 +1019,11 @@ footer a:hover{color: #0065fc}
 		align-items: center;
 	}
 
-	.popular_image img {width: 100%}
+	.popular_image img {
+		width: 100%;
+		position: absolute;
+		bottom: 0px;
+	}
 
 	.popular_text {
 		background: white;
@@ -971,8 +1032,21 @@ footer a:hover{color: #0065fc}
 		width: 100%;
 		z-index: 2;
 		bottom: 0px;
-		padding: 5px;
 		text-align: left;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.popular_text_content {
+		margin: 0px 5px; 
+		padding: 0px;
+		display: flex; 
+		flex-direction: column; 
+	}
+	
+	.popular_text_rating {
+		margin: 0px 5px 5px 5px;
+		padding: 0px;
 	}
 
 
@@ -1147,64 +1221,80 @@ footer a:hover{color: #0065fc}
 	#blockpage {
 		width: auto;
 	}
+
+	h1, h2, h3, h4, p, div, ul, ol { 
+		margin: 0; padding: 0; margin-block-start: 0; margin-block-end: 0;
+	}
 	
+	h1, h2, h3 {
+		font-weight: bold;
+	}
+	
+	h1 {line-height: 50px; font-size: 34px;}
+	
+	h2 {font-size: 30px;}
+	
+	h3 {font-size: 20px;}
+	
+	a {
+		text-decoration-line: none;
+		color: black;
+	}
+	
+
 	/* -------------------------------------- */
 	/* ----------------HEADER---------------- */
 	/* -------------------------------------- */
-	
+
 	header {
-		background-color: red;	
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 100%;
-		margin-top: 30px;
-	}
-	
-	#logo_reservia {
-		position: static;
-		align-self: flex-start;
+		margin: 20px 3.5% 0 3.5%;
 	}
 
+	#logo_reservia img {
+		width: 150%;
+	}
+
+	header a {font-size: 30px;}
+
 	#navigation {
-		background-color: white;
 		display: flex;
 		flex-direction: row-reverse;
-		justify-content: flex-start;
 		align-items: center;
 		flex-wrap: wrap;
-		width: 50%;
+		width: 67%;
 	}
-	
+
 	nav ul {
 		list-style-type: none;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 		line-height: 63px;
-		padding: 20px;
 	}
-	
+
 	#navigation a {
 		display: inline-block;
-		margin-right: 10%;
+		margin-right: 3.5%;
 	}
-	
+
 	nav a {
 		color: black;
 	}
-	
+
 	nav a:hover {
 		color: #0065FC;
 		border-bottom: solid thin #0065FC;
 	}
-	
+
 	#inscription {
 		font-weight: bold;
 		line-height: 50px;
 	}
-	
-	
+
+
 	/* -------------------------------------- */
 	/* -----------SECTION RECHERCHE---------- */
 	/* -------------------------------------- */
@@ -1217,12 +1307,14 @@ footer a:hover{color: #0065fc}
 	/* titre */
 
 	#recherche_texte {
-		line-height: 30px;
+		line-height: 50px;
 		padding-top: 20px;
 	}
+
+	#recherche_texte p {font-size: 30px;}
 	
 	/* champ de recherche */
-
+	
 	#recherche_ville {
 		display: flex;
 		justify-content: center;
@@ -1235,8 +1327,8 @@ footer a:hover{color: #0065fc}
 	
 	#map_marker {
 		background-color: #f2f2f2;
-		width: 50px;
-		height: 50px;
+		width: 75px;
+		height: 75px;
 		border-radius: 12px 0 0 12px;
 		display: flex;
 		justify-content: center;
@@ -1248,23 +1340,47 @@ footer a:hover{color: #0065fc}
 	}
 	
 	#destination_critere {
-		height: 50px;
+		height: 75px;
+		width: 351px;
 		border: solid;
 		border-color: #f2f2f2;
 		text-align: left;
+		font-size: 24px;
+		padding-left: 10px;
 	}
 	
 	.button-1 {
+		display: none;
 		background-color: #0065fc;
 		color: white;
-		height: 50px;
+		height: 75px;
+		width: 201px;
 		border-radius: 0 12px 12px 0;
 		position: relative;
 		right: 5px;
 		border: 0;
 		padding: 0 20px 0 20px;
+		font-size: 24px;
 	}
 	
+	#button-1-bis {
+		display: inline-block;
+		background-color: #0065fc;
+		color: white;
+		height: 75px;
+		width: 201px;
+		border-radius: 0 12px 12px 0;
+		position: relative;
+		right: 5px;
+		border: 0;
+		padding: 0 20px 0 20px;
+		font-size: 24px;
+	}
+
+	.button-1-bis:hover {
+		background-color: #004dfc;
+	}
+
 	/* -------------------------------------- */
 	/* ---------FILTRES DE RECHERCHE--------- */
 	
@@ -1283,56 +1399,99 @@ footer a:hover{color: #0065fc}
 	#recherche_filtres_boutons {
 		padding-top: 20px;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		width: 100%;
 	}
 	
+	#boutons_groupe_1 {width: 100%;}
+
+	#boutons_groupe_2 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
+
+	.boutons_groupe {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
 	#recherche_filtres_boutons a {
 		display: inline-block;
 		margin-right: 1.7%;
 	}
 	
-	#button-2_1 {width: 190px;}
+	#button-2_1 {width: 285px;}
 	
-	#button-2_2 {width: 148px;}
+	#button-2_2 {width: 222px;}
 	
-	#button-2_3 {width: 180px;}
+	#button-2_3 {width: 270px;}
 	
-	#button-2_4 {width: 238px;}
+	#button-2_4 {width: 357px;}
 	
 	.button-2 {
-		height: 48px;
+		height: 72px;
 		background-color: white;
-		border: 2px solid #f2f2f2; 
-		border-radius: 27px;
-		font-size: 18px;
+		border: 3px solid #f2f2f2; 
+		border-radius: 40px;
+		font-size: 30px;
 		font-weight: bold;
 		display: flex;
 		align-items: center;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 	}
-	
-	/* paragraphe information */
+
+	#button-2_marker {
+		display: flex; 
+		justify-content: center;
+		align-items: center;
+		padding: auto;
+	}
 
 	#recherche_filtres_boutons i {
 		display: inline-block;
 		text-align: center;
-		font-size: 17px;
+		font-size: 25px;
 		color: #0065fc;
 		background-color: #deebff;
-		height: 50px;
-		width: 50px;
+		height: 75px;
+		width: 75px;
 		border-radius: 50%;
-		border: 2x solid #deebff;
-		line-height: 50px;
-		position: relative;
 		right: 2px;
 	}
 
+	/* paragraphe information */
 
+	#recherche_information {
+		display: flex;
+		align-items: center;
+		padding: 20px 0 20px 0;
+	}
 	
+	#logo_i {
+		width: 36px;
+		height: 36px;
+		border: solid thin #dedede;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.fa-info {
+		color: #0065fc;
+		font-size: 24px;
+	}
+
+	#recherche_information p {font-size: 28px;}
+
+
 	/* -------------------------------------- */
 	/* ---------SECTION HEBERGEMENTS--------- */
 	/* -------------------------------------- */
@@ -1378,7 +1537,7 @@ footer a:hover{color: #0065fc}
 	
 	.hebergements_box {
 		background: white;
-		height: 199px;
+		height: 238px;
 		border: 5px solid white;
 		border-radius: 15px;
 		font-size: small;
@@ -1425,9 +1584,10 @@ footer a:hover{color: #0065fc}
 	
 	
 	aside {
-		height: 580px;
+		height: auto;
 		width: 100%;
 		background-color: #F2F2F2;
+		border-radius: 0px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -1448,11 +1608,11 @@ footer a:hover{color: #0065fc}
 		justify-content: space-between;
 	}
 	
-	#popular a {width: 29.5%;}
+	#popular a {width: 100%;}
 	
 	.popular_box {
 		background: white;
-		height: 134px;
+		height: 238px;
 		border: 5px solid white;
 		border-radius: 15px;
 		font-size: small;
@@ -1463,7 +1623,7 @@ footer a:hover{color: #0065fc}
 	.popular_image {
 		position: absolute;
 		z-index: 1;
-		height: 134px;
+		height: 100%;
 		width: 40%;
 		border-radius: 15px 15px 0 0;
 		display: flex;
