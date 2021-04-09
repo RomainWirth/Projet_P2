@@ -68,27 +68,24 @@ nav ul {
 	line-height: 63px;
 }
 
-#navigation a {
+.navigation {
 	display: inline-block;
-	margin-right: 5%;
-}
-
-nav a {
 	color: black;
 }
 
-nav a:hover {
+.navigation:hover {
 	color: #0065FC;
 	border-top: solid thin #0065FC;
 }
 
-#inscription {
+#inscription a {
+	margin-right: 5%;
 	font-weight: bold;
 	line-height: 50px;
 	color: #0065fc;
 }
 
-#inscription:hover{
+#inscription a:hover{
 	color: #004dfc;
 }
 
@@ -151,6 +148,7 @@ nav a:hover {
 
 .button-1:hover {
 	background-color: #004dfc;
+	cursor: pointer;
 }
 
 #button-1-bis {
@@ -612,9 +610,10 @@ footer a:hover{color: #0065fc}
 /* --------------------------------Medium Screen Tablets-------------------------------- */
 /* ------------------------------------------------------------------------------------- */
 
-@media all and (min-device-width: 768px) and (max-device-width: 991px) {
+@media all and (min-width: 768px) and (max-width: 991px) {
 
-	#blockpage {
+	#bloc_page {
+		background-color: #f00;
 		width: auto;
 	}
 
@@ -682,6 +681,7 @@ footer a:hover{color: #0065fc}
 
 	nav a:hover {
 		color: #0065FC;
+		border-top: none;
 		border-bottom: solid thin #0065FC;
 	}
 
@@ -1216,7 +1216,7 @@ footer a:hover{color: #0065fc}
 /* ------------------------------------------------------------------------------------- */
 
 
-@media all and (max-device-width: 767px) {
+@media all and (max-width: 767px) {
 
 	#blockpage {
 		width: auto;
@@ -1350,7 +1350,6 @@ footer a:hover{color: #0065fc}
 	}
 	
 	.button-1 {
-		display: none;
 		background-color: #0065fc;
 		color: white;
 		height: 75px;
@@ -1361,6 +1360,7 @@ footer a:hover{color: #0065fc}
 		border: 0;
 		padding: 0 20px 0 20px;
 		font-size: 24px;
+		content: "&#xf002;";
 	}
 	
 	#button-1-bis {
