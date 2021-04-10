@@ -10,7 +10,7 @@
 }
 
 #bloc_page {
-	min-width: 992px;
+	min-width: 1024px;
 	max-width: 1440px;
 	margin: 0 auto;
 	font-family: "Raleway", sans-serif;
@@ -174,16 +174,22 @@ nav {
 	width: 92.5%;
 }
 
-.boutons_filtres_clic {
-	display: inline-block;
+.boutons_filtres {
+	display: flex;
+	flex-direction: row;
+	margin-right: 2%;
+	padding-right: 1.5%;
 	border: 2px solid #f2f2f2;
 	border-radius: 27px;
-	margin-left: 1%;
-	padding-right: 1.5%;
+}
+
+.boutons_filtres_clic {
+	display: inline-block;
+	border-radius: 27px;
 	margin-right: 2%;
 }
 
-.boutons_filtres {
+.boutons_filtres_contenu {
 	height: 48px;
 	font-size: 18px;
 	font-weight: bold;
@@ -208,6 +214,11 @@ nav {
 }
 
 .boutons_filtres_clic:hover {
+	background-color: #deebff;
+	border-color: #deebff;
+}
+
+.boutons_filtres:hover {
 	background-color: #deebff;
 	border-color: #deebff;
 }
@@ -580,11 +591,11 @@ footer a:hover{color: #0065fc}
 /* --------------------------------Medium Screen Tablets-------------------------------- */
 /* ------------------------------------------------------------------------------------- */
 
-@media all and (min-width: 768px) and (max-width: 991px) {
+@media all and (min-width: 768px) and (max-width: 1023px) {
 
 	#bloc_page {
 		background-color: #f00;
-		width: auto;
+		margin: none;
 	}
 
 	h1, h2, h3, h4, p, div, ul, ol { 
@@ -612,52 +623,51 @@ footer a:hover{color: #0065fc}
 	/* -------------------------------------- */
 
 	header {
+		margin: 20px 0 20px 0;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+	
+	#logo_reservia {
+		grid-column: 1 / span 1;
+		grid-row: 1 / span 1;
+		padding-top: 25px;
+		margin-right: 25px;
+		size: 125%;
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin: 20px 3.5% 0 3.5%;
 	}
 
-	#logo_reservia img {
-		width: 150%;
-	}
+	.navigation {font-size: 30px;}
 
-	header a {font-size: 30px;}
-
-	#navigation {
+	#inscription {
+		grid-column: 2 / span 1;
+		grid-row: 1 / span 1;
 		display: flex;
-		flex-direction: row-reverse;
-		align-items: center;
-		flex-wrap: wrap;
-		width: 67%;
+		justify-content: flex-end;
+		align-items: flex-end;
+		font-weight: bold;
+		padding: 25px;
 	}
 
-	nav ul {
-		list-style-type: none;
+	nav {
+		grid-column: 1 / span 2;
+		grid-row: 2 / span 1;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
-		line-height: 63px;
+		align-items: center;
 	}
-
-	#navigation a {
-		display: inline-block;
-		margin-right: 3.5%;
-	}
-
-	nav a {
-		color: black;
-	}
-
-	nav a:hover {
+	
+	
+	#inscrire {color: #0065fc;}
+	
+	.ancres {padding: 25px;}
+	
+	.navigation:hover {
 		color: #0065FC;
 		border-top: none;
 		border-bottom: solid thin #0065FC;
-	}
-
-	#inscription {
-		font-weight: bold;
-		line-height: 50px;
 	}
 
 
