@@ -171,64 +171,45 @@ nav {
 	flex-direction: row;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	width: 65%;
+	width: 92.5%;
 }
 
-#boutons_groupe_1 {width: 45%;}
-
-#boutons_groupe_2 {width: 55%;}
-
-.boutons_groupe {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin-bottom: 0px;
-}
-
-#recherche_filtres_boutons a {
+.boutons_filtres_clic {
 	display: inline-block;
-	margin-right: 1.7%;
+	border: 2px solid #f2f2f2;
+	border-radius: 27px;
+	margin-left: 1%;
+	padding-right: 1.5%;
+	margin-right: 2%;
 }
 
-#button-2_1 {width: 195px;}
-
-#button-2_2 {width: 153px;}
-
-#button-2_3 {width: 185px;}
-
-#button-2_4 {width: 243px;}
-
-.button-2 {
+.boutons_filtres {
 	height: 48px;
-	margin-right: 1.7%;
-	background-color: white;
-	border: 2px solid #f2f2f2; 
-	border-radius: 27px;
 	font-size: 18px;
 	font-weight: bold;
 	display: flex;
+	justify-content: space-around;
 	align-items: center;
-	flex-wrap: nowrap;
+	padding-right: 2%;
 }
 
-.button-2:hover {
-	background-color: #deebff;
-	border-color: #deebff;
-}
-
-#recherche_filtres_boutons i {
-	display: inline-block;
-	text-align: center;
-	font-size: 17px;
-	color: #0065fc;
-	background-color: #deebff;
-	height: 50px;
+.button_filtres_marker {
+	height: 46px;
 	width: 50px;
 	border-radius: 50%;
-	border: 2x solid #deebff;
-	line-height: 50px;
+	border: 2px solid #deebff;
 	position: relative;
 	right: 2px;
+	color: #0065fc;
+	background-color: #deebff;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+}
+
+.boutons_filtres_clic:hover {
+	background-color: #deebff;
+	border-color: #deebff;
 }
 
 /* -------------------------------------- */
