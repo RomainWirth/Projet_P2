@@ -40,53 +40,42 @@ a {
 /* -------------------------------------- */
 
 header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	margin: 20px 3.5% 20px 3.5%;
+	display: grid;
+	grid-template-columns: 68% 24% 8%;
+	grid-template-rows: 1fr;
 }
 
-#navigation {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: nowrap;
-	width: 32.6%;
+#logo_reservia {
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+	padding-top: 25px;
 }
 
 nav {
-	display: block;
-}
-
-nav ul {
-	list-style-type: none;
-	width: 324px;
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 1;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	line-height: 63px;
+	align-items: center;
 }
 
-.navigation {
-	display: inline-block;
-	color: black;
+#inscription {
+	grid-column: 3 / span 1;
+	grid-row: 1 / span 1;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
 }
+
+#inscrire {color: #0065fc;}
+
+.ancres {padding: 25px;}
 
 .navigation:hover {
 	color: #0065FC;
 	border-top: solid thin #0065FC;
-}
-
-#inscription a {
-	margin-right: 5%;
-	font-weight: bold;
-	line-height: 50px;
-	color: #0065fc;
-}
-
-#inscription a:hover{
-	color: #004dfc;
 }
 
 
