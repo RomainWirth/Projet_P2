@@ -35,6 +35,8 @@ a {
 	color: black;
 }
 
+strong {font-weight: bold;}
+
 /* -------------------------------------- */
 /* ----------------HEADER---------------- */
 /* -------------------------------------- */
@@ -394,25 +396,16 @@ aside {
 }
 
 .popular_image {
-	width: 38.138%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.popular_image_centrage {
-	height: 134px;
-	min-width: 100%;
-	max-width: 100%;
-	border-radius: 10px 0 0 10px;
+	min-width: 38.138%;
+	max-width: 38.138%;
 	overflow: hidden;
 }
 
-.popular_image img { 
-	min-width: 100%;
+.popular_image img {
+	min-width: 127px;
 	max-height: 134px;
-	border-radius: 10px 0 0 10px;
 }
+
 
 .popular_text {
 	background: #FFF;
@@ -458,6 +451,7 @@ aside {
 	position: relative;
 	border-radius: 15px;
 	box-shadow: 0 0 10px #e8e8e8;
+	overflow: hidden;
 }
 
 .activites_box:hover {
@@ -469,7 +463,7 @@ aside {
 	z-index: 1;
 	overflow: hidden;
 	width: 100%;
-	border-radius: 15px;
+	border-radius: 15px 15px 0 0;
 	display: flex;
 	justify-content: center;
 }
@@ -516,13 +510,13 @@ aside {
 
 #activites_box_2 {height: 236px; margin-bottom: 44px}
 
-#activites_image_2 {height: 235px; align-items: center;}
+#activites_image_2 {height: 181px; align-items: center;}
 
 #activites_image_2 img {width: 100%}
 
 #activites_box_3 {height: 165px;}
 
-#activites_image_3 {height: 164px; align-items: center;}
+#activites_image_3 {height: 110px; align-items: center;}
 
 #activites_image_3 img {width: 100%}
 
@@ -962,22 +956,15 @@ footer a:hover{color: #0065fc}
 	}
 
 	.popular_image {
-		height: 114px;
-		min-width: 100%;
-		max-width: 100%;
-		border-radius: 10px 10px 0 0;
-	}
-
-	.popular_image_centrage {
-		height: 114px;
 		min-width: 100%;
 		max-width: 100%;
 		border-radius: 10px 10px 0 0;
 		overflow: hidden;
+
 	}
-	
+		
 	.popular_image img { 
-		max-width: 100%;
+		width: 100%;
 		min-height: 114px;
 		border-radius: 10px 10px 0 0;
 	}
@@ -1083,13 +1070,13 @@ footer a:hover{color: #0065fc}
 
 	#activites_box_2 {height: 236px; margin-bottom: 44px}
 
-	#activites_image_2 {height: 236px; align-items: center;}
+	#activites_image_2 {height: 181px; align-items: center;}
 
 	#activites_image_2 img {width: 100%}
 
 	#activites_box_3 {height: 165px;}
 
-	#activites_image_3 {height: 165px; align-items: center;}
+	#activites_image_3 {height: 110px; align-items: center;}
 
 	#activites_image_3 img {width: 100%}
 
@@ -1125,7 +1112,7 @@ footer a:hover{color: #0065fc}
 
 	#activites_image_6 {height: 207px; align-items: center;}
 
-	#activites_image_6 img {width: 100%}
+	#activites_image_6 img {width: 100%;}
 
 	/* formater les images pour qu'elle s'intègrent dans les grids */
 
@@ -1176,7 +1163,7 @@ footer a:hover{color: #0065fc}
 @media all and (max-width: 767px) {
 
 	#bloc_page {
-		background-color: black;
+		background-color: blueviolet;
 		margin: 0;
 	}
 
