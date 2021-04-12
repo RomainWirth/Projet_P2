@@ -516,7 +516,7 @@ aside {
 
 #activites_box_3 {height: 165px;}
 
-#activites_image_3 {height: 110px; align-items: center;}
+#activites_image_3 {height: 110px; align-items: flex-start;}
 
 #activites_image_3 img {width: 100%}
 
@@ -536,13 +536,13 @@ aside {
 
 #activites_box_5 {height: 194px; margin-bottom: 44px;}
 
-#activites_image_5 {height: 193px; align-items: center;}
+#activites_image_5 {height: 193px; align-items: flex-start;}
 
 #activites_image_5 img {width: 100%}
 
 #activites_box_6 {height: 207px;}
 
-#activites_image_6 {height: 206px; align-items: center;}
+#activites_image_6 {height: 206px; align-items: flex-start;}
 
 #activites_image_6 img {width: 100%}
 
