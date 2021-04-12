@@ -1165,6 +1165,7 @@ footer a:hover{color: #0065fc}
 	#bloc_page {
 		background-color: blueviolet;
 		margin: 0;
+		width: 100%; 
 	}
 
 	h1, h2, h3, h4, p, div, ul, ol { 
@@ -1175,11 +1176,11 @@ footer a:hover{color: #0065fc}
 		font-weight: bold;
 	}
 	
-	h1 {line-height: 50px; font-size: 34px;}
+	h1 {line-height: 50px; font-size: 20px;}
 	
-	h2 {font-size: 30px;}
+	h2 {font-size: 18px;}
 	
-	h3 {font-size: 20px;}
+	h3 {font-size: 16px;}
 	
 	a {
 		text-decoration-line: none;
@@ -1192,7 +1193,7 @@ footer a:hover{color: #0065fc}
 	/* -------------------------------------- */
 
 	header {
-		margin: 20px 2.5% 20px 2.5%;
+		margin: 20px 0 20px 0;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 1fr);
@@ -1208,7 +1209,7 @@ footer a:hover{color: #0065fc}
 
 	#logo_reservia img {position: relative;}
 
-	.navigation {font-size: 30px;}
+	.navigation {font-size: 20px;}
 
 	#inscription {
 		grid-column: 2 / span 1;
@@ -1310,21 +1311,7 @@ footer a:hover{color: #0065fc}
 		content: "&#xf002;";
 	}
 	
-	#button-1-bis {
-		display: inline-block;
-		background-color: #0065fc;
-		color: #FFF;
-		height: 75px;
-		width: 201px;
-		border-radius: 0 12px 12px 0;
-		position: relative;
-		right: 5px;
-		border: 0;
-		padding: 0 20px 0 20px;
-		font-size: 24px;
-	}
-
-	.button-1-bis:hover {
+	.button-1:hover {
 		background-color: #004dfc;
 	}
 
