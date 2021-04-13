@@ -74,11 +74,14 @@ nav {
 
 .ancres {padding: 25px;}
 
+#formulaire {padding: 20px;}
+
 .navigation:hover {
 	color: #0065FC;
 	border-top: solid thin #0065FC;
 }
 
+#inscrire:hover {color: #004dfc;}
 
 /* -------------------------------------- */
 /* -----------SECTION RECHERCHE---------- */
@@ -595,11 +598,11 @@ footer a:hover{color: #0065fc}
 		font-weight: bold;
 	}
 	
-	h1 {line-height: 50px; font-size: 34px;}
+	h1 {line-height: 50px; font-size: 26px;}
 	
-	h2 {font-size: 30px;}
+	h2 {font-size: 22px;}
 	
-	h3 {font-size: 20px;}
+	h3 {font-size: 18px;}
 	
 	a {
 		text-decoration-line: none;
@@ -612,7 +615,7 @@ footer a:hover{color: #0065fc}
 	/* -------------------------------------- */
 
 	header {
-		margin: 20px 2.5% 20px 2.5%;
+		margin: 20px 0 20px 0;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 1fr);
@@ -622,22 +625,27 @@ footer a:hover{color: #0065fc}
 		grid-column: 1 / span 1;
 		grid-row: 1 / span 1;
 		padding-top: 25px;
-		margin-left: 5%;
-		display: flex;
+		margin-left: 5.6%;
 	}
 
 	#logo_reservia img {position: relative;}
 
-	.navigation {font-size: 30px;}
+	.navigation {
+		display: inline-block; 
+		width: 50%; 
+		font-size: 16px;
+		text-align: center;
+		border-bottom: solid thin #F2F2F2;
+	}
 
 	#inscription {
 		grid-column: 2 / span 1;
 		grid-row: 1 / span 1;
-		padding-top: 25px;
-		margin-right: 5%;
+		padding-top: 20px;
+		margin-right: 5.6%;
 		display: flex;
 		justify-content: flex-end;
-		align-items: flex-end;
+		align-items: center;
 		font-weight: bold;
 	}
 
@@ -646,21 +654,29 @@ footer a:hover{color: #0065fc}
 		grid-row: 2 / span 1;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: center;
 	}
+		
+	#inscrire {
+		display: inline-block; 
+		text-align: right;
+		color: #0065fc;
+	}
 	
+	.ancres {
+		padding: 20px;
+	}
 	
-	#inscrire {color: #0065fc;}
-	
-	.ancres {padding: 25px;}
-	
+	#formulaire {padding: 20px;}
+
 	.navigation:hover {
 		color: #0065FC;
 		border-top: none;
 		border-bottom: solid thin #0065FC;
 	}
 
+	#inscrire:hover {color: #004dfc}
 
 	/* -------------------------------------- */
 	/* -----------SECTION RECHERCHE---------- */
@@ -678,7 +694,7 @@ footer a:hover{color: #0065fc}
 		padding-top: 20px;
 	}
 
-	#recherche_texte p {font-size: 30px;}
+	#recherche_texte p {font-size: 20px;}
 	
 	/* champ de recherche */
 	
@@ -694,8 +710,8 @@ footer a:hover{color: #0065fc}
 	
 	#map_marker {
 		background-color: #f2f2f2;
-		width: 75px;
-		height: 75px;
+		width: 50px;
+		height: 50px;
 		border-radius: 12px 0 0 12px;
 		display: flex;
 		justify-content: center;
@@ -703,30 +719,30 @@ footer a:hover{color: #0065fc}
 	}
 	
 	#map_marker i {
-		font-size: 24px;
+		font-size: 18px;
 	}
 	
 	#destination_critere {
-		height: 75px;
+		height: 50px;
 		width: 351px;
 		border: solid;
 		border-color: #f2f2f2;
 		text-align: left;
-		font-size: 24px;
+		font-size: 18px;
 		padding-left: 10px;
 	}
 	
 	.button-1 {
 		background-color: #0065fc;
 		color: #FFF;
-		height: 75px;
+		height: 50px;
 		width: 201px;
 		border-radius: 0 12px 12px 0;
 		position: relative;
 		right: 5px;
 		border: 0;
 		padding: 0 20px 0 20px;
-		font-size: 24px;
+		font-size: 18px;
 	}
 
 	/* -------------------------------------- */
@@ -770,8 +786,8 @@ footer a:hover{color: #0065fc}
 	}
 	
 	.boutons_filtres_contenu {
-		height: 72px;
-		font-size: 30px;
+		height: 50px;
+		font-size: 18px;
 		font-weight: bold;
 		display: flex;
 		justify-content: space-around;
@@ -780,8 +796,8 @@ footer a:hover{color: #0065fc}
 	}
 	
 	.button_filtres_marker {
-		height: 69px;
-		width: 75px;
+		height: 48px;
+		width: 50px;
 		border-radius: 50%;
 		border: 2px solid #deebff;
 		position: relative;
@@ -807,13 +823,14 @@ footer a:hover{color: #0065fc}
 
 	#recherche_information {
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
 		padding: 20px 0 20px 0;
 	}
 	
 	#logo_i {
-		width: 36px;
-		height: 36px;
+		width: 30px;
+		height: 30px;
 		border: solid thin #dedede;
 		border-radius: 50%;
 		display: flex;
@@ -823,10 +840,12 @@ footer a:hover{color: #0065fc}
 	
 	.fa-info {
 		color: #0065fc;
-		font-size: 24px;
+		font-size: 18px;
 	}
 
-	#recherche_information p {font-size: 28px;}
+	#recherche_info_text {width: 95%;}
+
+	#recherche_info_text p {font-size: 18px;}
 
 	/* -------------------------------------- */
 	/* ---------SECTION HEBERGEMENTS--------- */
@@ -1211,7 +1230,7 @@ footer a:hover{color: #0065fc}
 		width: 50%; 
 		font-size: 16px;
 		text-align: center;
-		border-bottom: solid #F2F2F2;
+		border-bottom: solid thin #F2F2F2;
 	}
 
 	#inscription {
@@ -1249,7 +1268,7 @@ footer a:hover{color: #0065fc}
 	.navigation:hover {
 		color: #0065FC;
 		border-top: none;
-		border-bottom: solid #0065FC;
+		border-bottom: solid thin #0065FC;
 	}
 
 
