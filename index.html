@@ -3,8 +3,9 @@
 
 <head>
 	<meta charset="utf-8" />
-	<link href="style.css" rel="stylesheet"></link> <!-- modifier le chemin fichier css si nécessaire -->
-	<link href="https://fonts.gstatic.com" rel="stylesheet"></link>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="style.css" rel="stylesheet" />
+	<link href="https://fonts.gstatic.com" rel="stylesheet" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
 	<title>Reservia</title>
 </head>
@@ -19,19 +20,19 @@
 			</div>
 			<nav>
 				<a class="navigation" href="#hebergements">
-					<div class="ancres">
+					<div class="ancres" id="hebergement_ancre">
 						Hébergements
 					</div>
 				</a>
 				<a class="navigation" href="#activites">
-					<div class="ancres">
+					<div class="ancres" id="activite_ancre">
 						Activités
 					</div>
 				</a>
 			</nav>
 			<div id="inscription">
-				<a class="navigation" id="inscrire" href="#">
-					<div class="ancres">
+				<a id="inscrire" href="#">
+					<div id="formulaire">
 						S'inscrire	
 					</div>
 				</a>
@@ -53,10 +54,10 @@
 				<form method="post" action="traitement.php"> <!-- pas de page PHP pour le traitement des données -->
 					<div id="recherche_ville_contenu">
 						<div id="map_marker">
-							<i style='font-size: auto' class="fas fa-map-marker-alt"></i>
+							<i class="fas fa-map-marker-alt"></i>
 						</div>
-						<label for="Destination">
-							<input type="search" name="destination" id="destination_critere" placeholder="Destination" />
+						<label for="destination_critere">
+							<input type="search" name="Destination" id="destination_critere" placeholder="Destination" />
 						</label>
 						<input type="submit" value="&nbsp;Rechercher&nbsp;" class="button-1" />
 					</div>
@@ -125,7 +126,9 @@
 				<div id="logo_i">
 					<i class='fas fa-info'></i>
 				</div>
-				<p>&nbsp;Plus de 500 logements sont disponibles dans cette ville</p>
+				<div id="recherche_info_text">
+					<p>Plus de 500 logements sont disponibles dans cette ville</p>
+				</div>
 			</div>
 		</section>
 
@@ -223,7 +226,7 @@
 
 		<!-- afficher plus -->
         		<div id="afficher_plus">
-					<h2><a id="afficher_plus_a" href="more_hotels">Afficher plus</a></h2></p>
+					<h2><a id="afficher_plus_a" href="more_hotels">Afficher plus</a></h2>
 				</div>
 			</article>
 
