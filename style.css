@@ -664,11 +664,9 @@ footer a:hover{color: #0065fc}
 		color: #0065fc;
 	}
 	
-	.ancres {
-		padding: 20px;
-	}
+	.ancres {padding: 20px;}
 	
-	#formulaire {padding: 20px;}
+	#formulaire {font-size: 20px; padding: 20px;}
 
 	.navigation:hover {
 		color: #0065FC;
@@ -866,7 +864,7 @@ footer a:hover{color: #0065fc}
 
 
 	article {
-		height: 626px;
+		height: auto;
 		width: 100%;
 		margin: 0;
 		background-color: #FFF;
@@ -876,13 +874,13 @@ footer a:hover{color: #0065fc}
 	}
 
 	#hebergements_titre {
-		margin: 0 4.5% 0 4.5%;
+		margin: 20px 4.5% 0 4.5%;
 		display: flex;
 		align-items: flex-end;
 	}
 
 	.hebergements_row {
-		margin: 0 4.5% 0 4.5%;
+		margin: 0 4.5% 20px 4.5%;
 		width: 90.9091%;
 		display: flex;
 		flex-direction: row;
@@ -919,7 +917,7 @@ footer a:hover{color: #0065fc}
 	}
 
 	#afficher_plus {
-		margin: 0 4.5% 0 4.5%;
+		margin: 0 4.5% 20px 4.5%;
 	}
 
 	#afficher_plus h2 {
@@ -933,7 +931,7 @@ footer a:hover{color: #0065fc}
 
 
 	aside {
-		height: 400px;
+		height: auto;
 		width: 100%;
 		margin: 0;
 		background-color: #F2F2F2;
@@ -945,17 +943,17 @@ footer a:hover{color: #0065fc}
 	}
 
 	#popular_titre {
-		width: 50%;
-		margin: 0 4.5% 0 4.5%;
+		width: 91%;
+		margin: 20px 4.5% 10px 4.5%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 
-	.fa-chart-line {font-size: 35px;}
+	.fa-chart-line {font-size: 28px; align-self: flex-end;}
 
 	#popular {
-		margin: 0 4.5% 0 4.5%;
+		margin: 0 4.5% 20px 4.5%;
 		width: 90.9091%;
 		display: flex;
 		flex-direction: row;
@@ -1018,8 +1016,8 @@ footer a:hover{color: #0065fc}
 
 
 	#activites {
-		margin-top: 60px;
-		height: 1100px;
+		margin-top: 30px;
+		height: 1000px;;
 	}
 
 	#activites_titre {
@@ -1032,7 +1030,7 @@ footer a:hover{color: #0065fc}
 
 
 	#activites_grid {
-		margin: 0 3.5% 0 3.5%;
+		margin: 10px 3.5% 0 3.5%;
 		height: 900px;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
