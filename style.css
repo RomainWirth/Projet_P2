@@ -275,7 +275,7 @@ article {
 .hebergements_box:hover {box-shadow: 0 0 15px #CECECE;}
 
 .hebergements_box_image {
-	height: 114px;
+	height: 115px;
 	top: 0px;
 	min-width: 100%;
 	max-width: 100%;
@@ -286,8 +286,8 @@ article {
 }
 
 .hebergements_box_image img {
-	max-width: 100%; 
-	min-height: 114px;; 
+	min-width: 100%; 
+	max-height: auto;
 	border-radius: 10px 10px 0 0;
 }
 
@@ -347,7 +347,6 @@ aside {
 	height: 134px;
 	border: 5px solid #FFF;
     border-radius: 15px;
-    text-align: left;
     font-size: small;
 	margin-bottom: 30px;
 	overflow: hidden;
@@ -394,7 +393,7 @@ aside {
 /* -------------------------------------- */
 
 
-#activites {margin-top: 60px; height: 614px;}
+#activites {margin-top: 60px; height: 554px;}
 
 #activites_titre {margin: 0 3.5% 20px 3.5%;}
 
@@ -734,7 +733,7 @@ footer a:hover{color: #0065fc}
 
 	.popular_box {
 		background: #FFF;
-	    height: 199px;
+	    height: 190px;
 	    border-radius: 15px;
 	    font-size: small;
 		position: relative;
@@ -744,11 +743,14 @@ footer a:hover{color: #0065fc}
 		min-width: 100%;
 		max-width: 100%;
 		border-radius: 10px 10px 0 0;
+		display: flex;
+		align-items: center;
+		position: absolute;
 	}
 		
 	.popular_image img { 
 		min-width: 100%;
-		max-height: 114px;
+		max-height: 100%;
 		border-radius: 10px 10px 0 0;
 	}
 
@@ -1228,8 +1230,7 @@ footer a:hover{color: #0065fc}
 		overflow: hidden;
 	}
 	
-	.popular_image img {min-width: 127px; max-height: 134px;}
-	
+	.popular_image img {min-width: 100%; max-height: auto;}
 	
 	.popular_text {
 		background: #FFF;
