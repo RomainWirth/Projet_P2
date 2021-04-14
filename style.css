@@ -15,13 +15,9 @@
 	font-family: "Raleway", sans-serif;
 }
 
-h1, h2, h3, h4, p, div, ul, ol { 
-	margin: 0; padding: 0; margin-block-start: 0; margin-block-end: 0;
-}
+h1, h2, h3, h4, p, div, ul, ol {margin: 0; padding: 0; margin-block-start: 0; margin-block-end: 0;}
 
-h1, h2, h3 {
-	font-weight: bold;
-}
+h1, h2, h3 {font-weight: bold;}
 
 h1 {font-size: 20px;}
 
@@ -29,10 +25,7 @@ h2 {font-size: 18px;}
 
 h3 {font-size: 16px;}
 
-a {
-	text-decoration-line: none;
-	color: #000;
-}
+a {text-decoration-line: none; color: #000;}
 
 strong {font-weight: bold;}
 
@@ -76,10 +69,7 @@ nav {
 
 #formulaire {padding: 20px;}
 
-.navigation:hover {
-	color: #0065FC;
-	border-top: solid thin #0065FC;
-}
+.navigation:hover {color: #0065FC; border-top: solid thin #0065FC;}
 
 #inscrire:hover {color: #004dfc;}
 
@@ -88,19 +78,11 @@ nav {
 /* -------------------------------------- */
 
 
-#recherche {
-	margin: 0 3.5% 0 3.5%;
-}
+#recherche {margin: 0 3.5% 0 3.5%;}
 
-#recherche_texte {
-	line-height: 30px;
-	padding-top: 20px;
-}
+#recherche_texte {line-height: 30px; padding-top: 20px;}
 
-#recherche_ville_contenu {
-	display: flex;
-	padding-top: 20px;
-}
+#recherche_ville_contenu {display: flex; padding-top: 20px;}
 
 #map_marker {
 	background-color: #f2f2f2;
@@ -112,9 +94,7 @@ nav {
 	align-items: center;
 }
 
-#map_marker i {
-	font-size: 24px;
-}
+#map_marker i {font-size: 24px;}
 
 #destination_critere {
 	height: 50px;
@@ -136,13 +116,16 @@ nav {
 	right: 5px;
 	border: 0;
 	padding: 0 20px 0 20px;
-	font-size: 18px;
+	font-size: 0;
 }
 
-.button-1:hover {
-	background-color: #004dfc;
-	cursor: pointer;
+.button-1::after {
+	content: "Rechercher";
+	font-size: 18px;
+	color: #FFF;
 }
+
+.button-1:hover {background-color: #004dfc;	cursor: pointer;}
 
 /* -------------------------------------- */
 /* ---------FILTRES DE RECHERCHE--------- */
@@ -203,15 +186,9 @@ nav {
 	align-items: center;
 }
 
-.boutons_filtres_clic:hover {
-	background-color: #deebff;
-	border-color: #deebff;
-}
+.boutons_filtres_clic:hover {background-color: #deebff; border-color: #deebff;}
 
-.boutons_filtres:hover {
-	background-color: #deebff;
-	border-color: #deebff;
-}
+.boutons_filtres:hover {background-color: #deebff; border-color: #deebff;}
 
 /* -------------------------------------- */
 /* ------------RECHERCHE INFO------------ */
@@ -233,10 +210,7 @@ nav {
 	align-items: center;
 }
 
-.fa-info {
-	color: #0065fc;
-	font-size: 12px;
-}
+.fa-info {color: #0065fc; font-size: 12px;}
 
 #recherche_info_text {margin-left: 0.5%;}
 
@@ -251,13 +225,9 @@ nav {
 	margin: auto;
 }
 
-.fa-star {
-	color: #0065fc;
-}
+.fa-star {color: #0065fc;}
 
-.etoile-grise {
-	color: #dedede;
-}
+.etoile-grise {color: #dedede;}
 
 /* -------------------------------------- */
 /* ---Article : div hotel_selectionnés--- */
@@ -302,9 +272,7 @@ article {
 	box-shadow: 0 0 10px #e8e8e8;
 }
 
-.hebergements_box:hover {
-	box-shadow: 0 0 15px #CECECE;
-}
+.hebergements_box:hover {box-shadow: 0 0 15px #CECECE;}
 
 .hebergements_box_image {
 	height: 114px;
@@ -336,18 +304,11 @@ article {
 	justify-content: space-around;
 }
 
-#afficher_plus {
-	margin: 0 4.5% 0 4.5%;
-}
+#afficher_plus {margin: 0 4.5% 0 4.5%;}
 
-#afficher_plus h2 {
-	font-size: medium; 
-	font-weight: bold;
-}
+#afficher_plus h2 {font-size: medium; font-weight: bold;}
 
-#afficher_plus_a:hover {
-	color: #0065fc;
-}
+#afficher_plus_a:hover {color: #0065fc;}
 
 
 /* -------------------------------------- */
@@ -539,10 +500,7 @@ aside {
 /* ----------------FOOTER---------------- */
 /* -------------------------------------- */
 
-footer {
-	background-color: #F2F2F2;
-	text-align: top left;
-}
+footer {background-color: #F2F2F2; text-align: top left;}
 
 footer ul {list-style-type: none; line-height: 30px;}
 
@@ -705,7 +663,13 @@ footer a:hover{color: #0065fc}
 		right: 5px;
 		border: 0;
 		padding: 0 20px 0 20px;
+		font-size: 0;
+	}
+
+	.button-1::after {
+		content: "Rechercher";
 		font-size: 18px;
+		color: #FFF;
 	}
 
 	/* -------------------------------------- */
@@ -1234,10 +1198,11 @@ footer a:hover{color: #0065fc}
 		position: relative;
 		right: 5px;
 		border: 0;
-		padding: 0 20px 0 20px;
-		font-size: 12px;
-		content: "&#xf002;";
+		padding: 0;
+		font-size: 16px;
 	}
+
+	.button-1::after {content: "Rechercher"; font-size: 0;}
 	
 	.button-1:hover {background-color: #004dfc;}
 
