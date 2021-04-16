@@ -251,6 +251,12 @@ article {
 	align-items: flex-end;
 }
 
+#hebergements_contenu {
+	display:flex; 
+	flex-direction: column; 
+	justify-content: space-between;
+}
+
 .hebergements_row {
 	margin: 0 4.5% 30px 4.5%;
 	width: 90.9091%;
@@ -328,10 +334,10 @@ aside {
 }
 
 #popular_titre {
-	margin: 34px 9.5% 30px 9.5%;
+	margin: 0 9.5% 30px 9.5%;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 	font-size: 24px;
 }
 
@@ -348,17 +354,15 @@ aside {
 	border: 5px solid #FFF;
     border-radius: 15px;
     font-size: small;
-	margin-bottom: 30px;
 	overflow: hidden;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	box-shadow: 0 0 10px #e8e8e8;
 }
 
 .popular_box:hover{box-shadow: 0 0 15px #CECECE;}
 
 .popular_image {
-<<<<<<< HEAD
 	min-width: 150px;
 	max-width: 150px;
 	overflow: hidden;
@@ -369,17 +373,6 @@ aside {
 	max-height: 150px;
 	border-radius: 10px 0 0 10px;
 }
-=======
-	min-width: 38.138%;
-	max-width: 38.138%;
-	overflow: hidden;
-	position: relative;
-	display: flex;
-	justify-content: center;
-}
-
-.popular_image img {min-width: 100%; max-height: 134px; position: absolute;}
->>>>>>> main
 
 .popular_text {
 	background: #FFF;
