@@ -21,7 +21,7 @@ h1, h2, h3 {font-weight: bold;}
 
 h1 {font-size: 20px;}
 
-h2 {font-size: 18px;}
+h2 {font-size: 20px;}
 
 h3 {font-size: 16px;}
 
@@ -137,7 +137,7 @@ nav {
 	padding-top: 20px;
 }
 
-#recherche_filtres_titre {width: 7.5%;}
+#recherche_filtres_titre {width: 7.5%; font-size: 18px; font-weight: bold}
 
 #recherche_filtres_boutons {
 	display: flex;
@@ -313,7 +313,7 @@ article {
 
 #afficher_plus {margin: 0 4.5% 0 4.5%;}
 
-#afficher_plus h2 {font-size: medium; font-weight: bold;}
+#afficher_plus_a {font-size: medium; font-weight: bold;}
 
 #afficher_plus_a:hover {color: #0065fc;}
 
@@ -335,7 +335,11 @@ aside {
 }
 
 #popular_titre {
+<<<<<<< HEAD
 	margin: 0 9.5% 30px 9.5%;
+=======
+	margin: 30px 9.5% 30px 9.5%;
+>>>>>>> main
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
@@ -406,7 +410,7 @@ aside {
 
 #activites {margin-top: 60px; height: 554px;}
 
-#activites_titre {margin: 0 3.5% 20px 3.5%;}
+#activites_titre {margin: 0 3.5% 30px 3.5%;}
 
 .activites_box {
 	position: relative;
@@ -544,7 +548,7 @@ footer a:hover{color: #0065fc}
 	
 	h1 {line-height: 50px; font-size: 22px;}
 	
-	h2 {font-size: 20px;}
+	h2 {font-size: 22px;}
 	
 	h3 {font-size: 18px;}
 	
@@ -672,7 +676,7 @@ footer a:hover{color: #0065fc}
 		justify-content: space-around;
 	}
 
-	#hebergements_titre {margin: 20px 4.5% 0 4.5%;}
+	#hebergements_titre {margin: 20px 4.5% 20px 4.5%;}
 
 	.hebergements_row {margin: 0 4.5% 20px 4.5%;}
 
@@ -695,7 +699,7 @@ footer a:hover{color: #0065fc}
 		align-items: flex-start;
 	}
 
-	#popular_titre {width: 91%;	margin: 20px 4.5% 10px 4.5%;}
+	#popular_titre {width: 91%;	margin: 20px 4.5% 20px 4.5%;}
 
 	.fa-chart-line {font-size: 20px; align-self: flex-end;}
 
@@ -718,11 +722,13 @@ footer a:hover{color: #0065fc}
 		min-width: 100%;
 		max-width: 100%;
 		border-radius: 10px 10px 0 0;
+		flex-direction: column;
 	}
 		
 	.popular_image img { 
 		max-height: 100%;
 		border-radius: 10px 10px 0 0;
+		margin-bottom: 100px;
 	}
 
 	.popular_text {
@@ -750,6 +756,7 @@ footer a:hover{color: #0065fc}
 
 	#activites {margin-top: 30px; margin-bottom: 30px; height: 1000px;}
 
+	#activites_titre {margin: 0 3.5% 20px 3.5%;}
 
 	/* -------------------------------------- */
 	/* ---------------CSS GRID--------------- */
@@ -954,7 +961,7 @@ footer a:hover{color: #0065fc}
 		justify-content: space-around;
 	}
 	
-	#hebergements_titre {margin: 35px 4.5% 10px 4.5%;}
+	#hebergements_titre {margin: 35px 4.5% 40px 4.5%;}
 	
 	.hebergements_row {
 		margin: 0 4.5% 0 4.5%;
@@ -985,7 +992,7 @@ footer a:hover{color: #0065fc}
 		justify-content: space-around;
 	}
 	
-	#popular_titre {margin: 0 5.6% 0 5.6%;}
+	#popular_titre {margin: 30px 5.6% 30px 5.6%;}
 	
 	#popular {margin: 0 5.6% 0 5.6%;}
 	
@@ -997,7 +1004,7 @@ footer a:hover{color: #0065fc}
 	
 	#activites {margin-top: 30px; margin-bottom: 30px; height: auto;}
 	
-	#activites_titre {margin: 0 5.6% 0 5.6%;}
+	#activites_titre {margin: 0 5.6% 40px 5.6%;}
 	
 	
 	/* -------------------------------------- */
