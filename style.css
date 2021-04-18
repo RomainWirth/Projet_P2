@@ -252,13 +252,14 @@ article {
 }
 
 #hebergements_contenu {
-	display:flex; 
+	height: 479px;
+	display: flex; 
 	flex-direction: column; 
 	justify-content: space-between;
 }
 
 .hebergements_row {
-	margin: 0 4.5% 30px 4.5%;
+	margin: 0 4.5% 0 4.5%;
 	width: 90.9091%;
 	display: flex;
 	flex-direction: row;
@@ -343,6 +344,7 @@ aside {
 
 #popular {
 	margin: 0 9.5% 0 9.5%;
+	height: 479px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
