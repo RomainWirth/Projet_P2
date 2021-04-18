@@ -335,11 +335,7 @@ aside {
 }
 
 #popular_titre {
-<<<<<<< HEAD
-	margin: 0 9.5% 30px 9.5%;
-=======
 	margin: 30px 9.5% 30px 9.5%;
->>>>>>> main
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
