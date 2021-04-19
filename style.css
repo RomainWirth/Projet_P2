@@ -225,6 +225,8 @@ nav {
 	margin: auto;
 }
 
+#section_titre {display: none;}
+
 .fa-star {color: #0065fc;}
 
 .etoile-grise {color: #dedede;}
