@@ -251,6 +251,8 @@ article {
 	align-items: flex-end;
 }
 
+#hebergements_contenu {height: 479px;}
+
 .hebergements_row {
 	margin: 0 4.5% 30px 4.5%;
 	width: 90.9091%;
@@ -328,7 +330,7 @@ aside {
 }
 
 #popular_titre {
-	margin: 30px 9.5% 30px 9.5%;
+	margin: 0 9.5% 30px 9.5%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -337,6 +339,7 @@ aside {
 
 #popular {
 	margin: 0 9.5% 0 9.5%;
+	height: 479px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -348,7 +351,6 @@ aside {
 	border: 5px solid #FFF;
     border-radius: 15px;
     font-size: small;
-	margin-bottom: 30px;
 	overflow: hidden;
 	display: flex;
 	justify-content: flex-start;
@@ -666,6 +668,8 @@ footer a:hover{color: #0065fc}
 
 	#hebergements_titre {margin: 20px 4.5% 20px 4.5%;}
 
+	#hebergements_contenu {height: auto;}
+
 	.hebergements_row {margin: 0 4.5% 20px 4.5%;}
 
 	.hebergements_box_text {padding: 5px;}
@@ -694,6 +698,7 @@ footer a:hover{color: #0065fc}
 	#popular {
 		margin: 0 4.5% 20px 4.5%;
 		width: 90.9091%;
+		height: auto;
 		flex-direction: row;
 	}
 
@@ -950,6 +955,8 @@ footer a:hover{color: #0065fc}
 	}
 	
 	#hebergements_titre {margin: 35px 4.5% 40px 4.5%;}
+
+	#hebergements_contenu {height: auto;}
 	
 	.hebergements_row {
 		margin: 0 4.5% 0 4.5%;
