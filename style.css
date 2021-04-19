@@ -251,15 +251,8 @@ article {
 	align-items: flex-end;
 }
 
-#hebergements_contenu {
-	height: 479px;
-	display: flex; 
-	flex-direction: column; 
-	justify-content: space-between;
-}
-
 .hebergements_row {
-	margin: 0 4.5% 0 4.5%;
+	margin: 0 4.5% 30px 4.5%;
 	width: 90.9091%;
 	display: flex;
 	flex-direction: row;
@@ -338,13 +331,12 @@ aside {
 	margin: 30px 9.5% 30px 9.5%;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: center;
 	font-size: 24px;
 }
 
 #popular {
 	margin: 0 9.5% 0 9.5%;
-	height: 479px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -356,25 +348,25 @@ aside {
 	border: 5px solid #FFF;
     border-radius: 15px;
     font-size: small;
+	margin-bottom: 30px;
 	overflow: hidden;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	box-shadow: 0 0 10px #e8e8e8;
 }
 
 .popular_box:hover{box-shadow: 0 0 15px #CECECE;}
 
 .popular_image {
-	min-width: 150px;
-	max-width: 150px;
+	min-width: 38.138%;
+	max-width: 38.138%;
 	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
 }
 
-.popular_image img {
-	min-width: 150px;
-	max-height: 150px;
-	border-radius: 10px 0 0 10px;
-}
+.popular_image img {min-width: 100%; max-height: 134px; position: absolute;}
 
 .popular_text {
 	background: #FFF;
